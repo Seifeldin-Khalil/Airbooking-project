@@ -1,0 +1,290 @@
+     <!DOCTYPE html>
+      <html lang = "en">
+          <head>
+              <title> AirBooking.com ‖ Search </title>
+              <link rel="stylesheet" href="Assets/Layout.css">
+                <script src="Assets/script.js"></script>
+          </head>
+
+          <body>
+              <div id = "logo">
+                  <div class = "webcenter">
+                        <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                        <a id="login" href="Login.html" class="button"><br> Login </a>
+                      <a href="signup.html" class="button"><br> SignUp </a>
+                      <form method="post">
+                         <select id="LANG" name="lang">
+                             <option>English</option>
+                             <option>Chinese</option>
+                             <option>Arabic</option>
+                             <option>French</option>
+                             <option>German</option>
+                             <option>Italian</option>
+                             <option>Japanese</option>
+                             <option>Russian</option>
+                             <option>Turkish</option>
+                             <option>Spanish</option>
+                             <option>Swedish</option>
+                          </select>
+                       </form>
+                      <form method="post">
+                         <select id="currency" name="EGP">
+                             <option>EGP (LE)</option>
+                             <option>EUR (€)</option>
+                             <option>GBP (£)</option>
+                             <option>USD ($)</option>
+                             <option>SGD (S$)</option>
+                             <option>JPY (¥)</option>
+                             <option>KWD (KD)</option>
+                             <option>MXN (Mex$)</option>
+                             <option>RUB (₽)</option>
+                             <option>SAR (SR)</option>
+                             <option>CAD (C$)</option>
+                          </select>
+                       </form> 
+                      <!-- <h1> AirBooking </h1> -->
+                  </div>
+              </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+        <div class="webcenter">
+
+            <div class="attractionstxt">
+                <h2>Attractions</h2>
+            </div>
+
+            <div class = "grid-containers4">
+
+                <a href="Parks%20Results.html" id= "imggrids9">
+                    <h3>Parks</h3>
+                </a>
+                <a href="Museums%20Results.html" id = "imggrids10">
+                    <h3>Museums</h3>
+                </a>
+                <a href="Activities.html" id = "imggrids11" >
+                    <h3>Activities</h3>
+                </a>
+                <a href="Historical%20Places%20Results.html" id = "imggrids12" >
+                    <h3>Historical Places</h3>
+                </a>
+
+            </div>
+
+            <br>
+            <br>
+            <div class = horizontallinetop></div>
+            <div class="webcenter">
+                <br>
+                <video autoplay muted loop id="myVideo">
+                    <source src="Assets/Video/museum%203.mp4" type="Video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+
+                <div class="videocontent">
+                    <h1>Museums</h1>
+                    <p>From rich Islamic and Coptic history to the ancient Egyptians, Egypt has one of the richest cultures in the world. As the capital, Cairo is home to some great museums that protect and showcase Egypt’s unique history. Here are a few that shouldn’t be missed.</p>
+                    <button id="myButton" onclick="playPause()">Pause</button>
+                </div>
+            </div>
+
+
+            <br>
+            <div class = horizontallinebot></div>
+            <div class ="attractionstxt">
+                <h2>Museums</h2>
+            </div>
+
+            <div class = "grid-containers5">
+
+                <div class="rows">
+                    <div class="columns">
+                        <div class="cards">
+                            <div class = "imggrids13">
+                                <img src="Assets/imgs/emuseum.jpg" alt="profileimg">
+                                <a href = "http://egypt.travel/en/attractions/the-egyptian-museum"><h3>Egyptian Museum</h3>
+                                    <h4>Tahrir Square rd, Tahrir Square</h4>
+                                    <p class = "pricegridatt">Price:Starting from E£ 80</p>
+                                    <p>The Egyptian Museum in Cairo is home to over 120,000 pieces of Anicient Egptian antiques. Designed by French architet Marcel Dourgnon and build in 1901.</p>
+                                </a>
+                            </div></div></div></div>
+
+                <div class = "imggrids13"> 
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/islamic.jpg" alt="profileimg">
+                                <a href = "https://www.miaegypt.org/"><h3>Museum of Islamic Art</h3>
+                                    <h4>Port Said, St El-Darb El-Ahmar</h4>
+                                    <p class = "pricegridatt">Price:Starts from E£ 5</p>
+                                    <p>Considered to be one of the best mueseums of its kind. Home to over 4,500 pices of artwork from all periods of islamic history. </p>
+                                </a>
+                            </div></div></div></div>
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/coptic.jpg" alt="profileimg">
+                                <a href = "http://www.coptic-cairo.com/museum/museum.html"><h3>Coptic Museum</h3>
+                                    <h4> 3 Mari Gerges, Kom Ghorab, Old Cairo</h4>
+                                    <p class = "pricegridatt">Price:Free</p>
+                                    <p>Built in 1908 by Egyptian ruler  Marcus Simaika to be home to Egypts largest collection of christian artifacts with more than 15,00 pieces being displayed.</p>
+                                </a>
+                            </div></div></div></div>
+
+            </div>
+
+            <div class = "grid-containers6">
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">      
+                                <img src="Assets/imgs/civ.jpg" alt="profileimg">
+                                <a href = "https://nmec.gov.eg/"><h3>National Museum of Egyptian Civilization</h3>
+                                    <h4>Ad Deyorah, Old Cairo</h4>
+                                    <p class = "pricegridatt">Price: Starting from E£ 80</p>
+                                    <p>The museum is full of Ancient Egyptain artifacts dating all the way back to the pharos home to more than 50,000 pieces.</p>
+                                </a>
+                            </div></div></div></div>
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/child.jpg" alt="profileimg">
+                                <a href = "https://www.facebook.com/childmuseum.eg/"><h3>Children Museum</h3>
+                                    <h4>34 Abou Bakr El-Sedeek, El-Bostan, Heliopolis</h4>
+                                    <p class = "pricegridatt">Price: Starting from E£ 20</p>
+                                    <p>Built in 1986, the museum is a great learning oppertunity for children and young adults to learn using hands on experience. </p>
+                                </a>                             
+                            </div></div></div></div>
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/army.jpg" alt="profileimg">
+                                <a href = "https://www.mod.gov.eg/ModWebSite/MuseumDetails.aspx?id=1"><h3>Egyptian National Military Museum</h3>
+                                    <h4>Salah Salem St</h4>
+                                    <p class = "pricegridatt">Price: Starting from E£ 30</p>
+                                    <p>Built in 1937, home to some the Egyptians army weapons and utilities used in various historical missions over time.</p>
+                                </a>
+                            </div></div></div></div>
+
+            </div>
+
+            <div class = "grid-containers7">
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/panorama.jpg" alt="profileimg">
+                                <a href = "https://www.mod.gov.eg/ModWebSite/MuseumDetails.aspx?id=2"><h3>6th of October Panorama</h3>
+                                    <h4>Salah Salem St, Al Estad, Nasr City</h4>
+                                    <p class = "pricegridatt">Price: E£ 3</p>
+                                    <p>Built in 1989, by former president Hosni Mubarak to commemorate the great ware of 1973, documents the great feat in detail.</p>
+                                </a>
+                            </div></div></div></div>
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/taha.jpg" alt="profileimg">
+                                <a href = "http://www.egyptianmuseums.net/html/taha_hussein_museum.html"><h3>Taha Hussein Museum</h3>
+                                    <h4>Al Omraneyah Al Gharbeyah, El Omraniya</h4>
+                                    <p class = "pricegridatt">Price: Starting from E£ 20</p>
+                                    <p>The home of one of Egypts most proflic and known writers changed to a museum to document his life.</p>
+                                </a>
+                            </div></div></div></div>
+
+                <div class = "imggrids13">
+                    <div class="rows">
+                        <div class="columns">
+                            <div class="cards">
+                                <img src="Assets/imgs/gamal.jpg" alt="profileimg">
+                                <a href = "https://www.facebook.com/AbdelnasserMusseum/"><h3>Gamal Abdelnasser Museum</h3>
+                                    <h4>4 El-Khalifa El-Maamoun, Mansheya El-Bakry, Heliopolis</h4>
+                                    <p class = "pricegridatt">Price: E£ 20</p>
+                                    <p>Named after the great Gamal Abdelnasser fromer Egyptian to commemorate his period as president. </p>
+                                </a>
+                            </div></div></div></div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> AirBooking.com ‖ Search </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <script src="Assets/script.js"></script>
+    </head>
+
+    <body>
+        <div id = "logo">
+            <div class = "webcenter">
+                <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                <a id="login" href="Login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                    <select id="LANG" name="lang">
+                        <option>English</option>
+                        <option>Chinese</option>
+                        <option>Arabic</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Russian</option>
+                        <option>Turkish</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                    </select>
+                </form>
+                <form method="post">
+                    <select id="currency" name="EGP">
+                        <option>EGP (LE)</option>
+                        <option>EUR (€)</option>
+                        <option>GBP (£)</option>
+                        <option>USD ($)</option>
+                        <option>SGD (S$)</option>
+                        <option>JPY (¥)</option>
+                        <option>KWD (KD)</option>
+                        <option>MXN (Mex$)</option>
+                        <option>RUB (₽)</option>
+                        <option>SAR (SR)</option>
+                        <option>CAD (C$)</option>
+                    </select>
+                </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>
+        </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+
+        <div class="flights-container">
+            <div class="header">
+                <div id="searchbox2">
+                    <div class="webcenter">
+                        <div class="row">
+                            <div class="searchcol1">
+                                <form id = "triptype" method="get">
+                                    <input id = "tripway" type="radio" name="triptype" value="One-way" >
+                                    <label for="tripway">One-way</label><br><br>
+                                    <input id = "tripway2" type="radio" name="triptype" value="Return">
+                                    <label for="tripway">Return</label>
+                                </form>
+                            </div>
+
+                            <div class="searchcol2">
+                                <label>From</label>
+                                <select size="1" name="airport" class="airport">
+                                    <option value="Cairo">Cairo (CAI)</option>
+                                    <option value="Alex">Alexandria (ALY)</option>
+                                    <option value="Hurghada">Hurghada (HRG)</option>
+                                    <option value="Sharm">Sharm El Sheikh (SSH)</option>
+                                    <option value="Portsaid">Port Said (PSD)</option>
+                                    <option value="6October">6th of October (SPX)</option>
+                                    <option value="Luxor">Luxor (LXR)</option>
+                                    <option value="Aswan">Aswan (ASW)</option>
+                                    <option value="Gouna">El Gouna</option>
+                                    <option value="Giza">Giza</option>
+                                </select>
+                            </div>
+
+                            <div class="searchcol2">
+                                <a href="flights.html"><img id="swap" src= "Assets/imgs/swap.png" alt= "swap"></a>
+                            </div>
+
+                            <div class="searchcol2">
+                                <label>To</label>
+                                <select class="airport" size="1" name="airport" >
+                                    <option value="Cairo">Cairo (CAI)</option>
+                                    <option value="Alex">Alexandria (ALY)</option>
+                                    <option value="Hurghada">Hurghada (HRG)</option>
+                                    <option value="Sharm">Sharm El Sheikh (SSH)</option>
+                                    <option value="Portsaid">Port Said (PSD)</option>
+                                    <option value="6October">6th of October (SPX)</option>
+                                    <option value="Luxor">Luxor (LXR)</option>
+                                    <option value="Aswan">Aswan (ASW)</option>
+                                    <option value="Gouna">El Gouna</option>
+                                    <option value="Giza">Giza</option>
+                                </select>
+                            </div>
+
+                            <div class="searchcol2">
+                                <label for="Depart">Depart</label>
+                                <input id = "Depart" class="calender" type="date" name="date">
+                            </div>
+
+                            <div class="searchcol2">
+                                <label for="Return">Return</label>
+                                <input id = "Return" class="calender" type="date" name="date">
+                            </div>
+
+                            <div class="searchcol2">
+                                <label>Class</label>
+                                <select id="class">
+                                    <option>Economy</option>
+                                    <option>Business</option>
+                                    <option>Premium Economy</option>
+                                    <option>First</option>
+                                    <option>Multiple</option>
+                                </select>
+                            </div>
+
+                            <div class="searchcol2">
+                                <label>Travelers</label>
+                                <select id = "travelers">
+                                    <option>Adults</option>
+                                    <option>Seniors</option>
+                                    <option>Youth</option>
+                                    <option>Child</option>
+                                    <option>Seat Infant</option>
+                                    <option>Lap Infant</option>
+                                </select>
+                            </div>  
+
+                            <div class="searchcol2">
+                                <label for="Seats">Seats</label>
+                                <input id = "Seats" class="amount" type="number" value="1" min="1" max="5">
+                            </div>
+
+                            <div class="searchcol2">
+                                <input id="searchbtn" type="submit" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left">
+                <span class="iconify icon:bi:search icon-inline:false"></span><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by category.." title="Type in a name">
+                <ul id="myUL">
+                    <li>
+                        <a href="#">SORT BY</a>
+                        <div>
+                            <label class="stops">Show All
+                                <input type="radio" checked="checked" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops"> Recommended
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops">Cheapest 
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops">Fastest 
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">DURATION</a>
+
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="10" value="1" step="2" class="slider" id="myRange1">
+                            <p>Total Hours: <span class="demo" onclick="sliderFunction()"></span></p>
+                        </div>
+                    </li> 
+
+                    <li>
+                        <a href="#">AIRFARES</a>
+
+                        <div class="slidecontainer">
+                            <h4>From: 3,500 EGP To: 4,500 EGP</h4>
+                            <input type="range" min="1" max="10" value="1" step="2" class="slider" id="myRange2"> 
+                            <p>Price Range: <span class="demo" onclick="sliderFunction()"></span></p>
+                        </div>
+                    </li> 
+
+                    <li>
+                        <a href="#">Refund</a>
+                        <div>
+                            <label class="stops">Show All
+                                <input type="radio" checked="checked" name="refund">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops"> With Refund
+                                <input type="radio" name="refund">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops">No Refund
+                                <input type="radio" name="refund">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">BAGGAGE</a>
+                        <div>  
+                            <label class="airlines">Show All
+                                <input type="checkbox" checked="checked" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines"> Without Baggage
+                                <input type="checkbox"   name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">  With Baggage & Carry-On
+                                <input type="checkbox"   name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">AIRLINES</a>
+                        <div>  
+                            <label class="airlines">Show All
+                                <input type="checkbox" checked="checked" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">EgyptAir
+                                <input type="checkbox"   name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">FlyEgypt
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">Nile Air
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">Air Cairo
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">Air Sinai
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">Alexandria airlines
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                            <label class="airlines">Air Arabia
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkmark2"></span>
+                            </label>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <br><hr><br>
+
+                <div class="adBox">
+                    <h2>Don't miss our great deals</h2>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="sideAlertBtn"><span class="iconify icon:bx:bxs-bell-ring icon-inline:false" ></span> Track Prices</button>
+                </div> 
+
+                <div class="adCard6">
+                    <h2>Book with confidence!</h2><hr><br>
+                    <span class="iconify icon:typcn-tick icon-inline:false"></span><h4>42 Years of Service Excellence</h4>
+                    <span class="iconify icon:typcn-tick icon-inline:false"></span><h4>Travel Industry Award Winner</h4>
+                    <span class="iconify icon:typcn-tick icon-inline:false"></span><h4>Price match promise</h4>
+                    <span class="iconify icon:typcn-tick icon-inline:false"></span><h4>Best Prices & Deals</h4>
+                    <span class="iconify icon:typcn-tick icon-inline:false"></span><h4>Discount Fares Updated Daily </h4>
+                </div>
+            </div>
+
+
+            <div class="middle">
+                <div class="resultListRow">
+                    <div id="resultNote">
+                        <h4><span class="iconify icon:el:info-circle icon-inline:false icon-width:30 icon-height:30"></span> NOTE TO USERS: &nbsp; &nbsp;The coronavirus (COVID-19) outbreak may impact your travels. Stay safe and find out more here.</h4>
+                    </div>
+
+                    <div id="resultNote2">
+                        <h4><span class="iconify icon:entypo:ticket icon-inline:false icon-width:26 icon-height:26"></span> BOOK WITH CONFIDENCE! &nbsp; &nbsp;Look out for airlines with flexible tickets <em>(with refund)</em> this often means you can cancel or change your dates for free.</h4>
+                    </div><br>
+
+                    <div class="resultsListColumn">
+                        <div class="resultListCard">
+                            <img src="Assets/imgs/egyptair_trans.png" alt="airlineLogo">                                
+                            <div class="flightData">
+                                <h4>01:40 AM</h4>
+                                <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> CAI</h4>
+                            </div>
+
+
+                            <div class="flightData">
+                                <h4 class="duration">19 Hours</h4>
+                                <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                            </div>
+
+                            <div class="flightData">
+                                <h4>08:40 PM</h4>
+                                <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> ALY</h4>
+                            </div>  
+
+                            <div class="flightData">
+                                <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                            </div>
+
+                            <div class="flightData">
+                                <h3 class="norefund">NO</h3>
+                                <h4 class="norefund">Refund</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resultsListColumn2">
+                        <div class="resultListCard">
+                            <h4 class="ticketprice">4,185 EGP</h4>
+                            <h5>Only 4 tickets left !</h5>
+                            <button onclick="checkout()"><span>SELECT</span></button>
+                        </div>
+                    </div> 
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/nileairtrans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>08:00 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> HRG</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">12 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>08:00 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> GIZA</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="refund">WITH</h3>
+                                    <h4 class="refund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">4,999 EGP</h4>
+                                <h5>Only 2 tickets left !</h5>
+                                <button><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/airarabiatrans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>12:40 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> SPX</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">6 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>06:40 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> PSD</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="refund">WITH</h3>
+                                    <h4 class="refund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">3,500EGP</h4>
+                                <h5>Only 1 ticket left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="resultListRow">
+                        <div class="alertsColumn">
+                            <div class="alertsCard">
+                                <img src="Assets/imgs/alerts2.png" alt="Newsletter subscribtion">
+                                <h2>Like these flights?</h2>
+                                <p>Subscribe to our newsletter to know when prices go up or down.</p>
+
+                                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="alertbutton"><span class="iconify icon:bx:bxs-bell-ring icon-inline:false"></span> Track Prices</button>
+
+                                <div id="id01" class="modal">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <form class="subscribe-form" method="get">
+                                        <div class="subsPopup">
+                                            <img src="Assets/imgs/alertSubscribtion.jpg" alt="Newsletter subscribtion">
+                                            <h2>Subscribe to see secret deals...</h2>
+                                            <p>We'll keep an eye on the price of your flights, hotels, or both. And we'll notify you when prices go up or down. </p>      
+                                            <br><br>
+                                            <label>Create alerts for</label> <br><br>
+
+                                            <input type="checkbox" checked="checked" name="remember" class="optcheckbox">
+                                            <button class="options">
+                                                <span class="iconify icon:ion:airplane-sharp icon-inline:false"></span> Flights
+                                            </button>
+
+                                            <input type="checkbox" name="remember" class="optcheckbox">
+                                            <button class="options">
+                                                <span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels
+                                            </button>
+
+                                            <input required type="text" placeholder="Enter Email" name="email" required>
+
+                                            <div class="clearfix">
+                                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                <button type="submit" class="signupbtn" onsubmit="confBox()"><span>Subscribe </span></button>
+                                            </div>
+
+                                            <br><hr>
+                                            <p>By continuing you agree to AirBooking's <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/airsainaitrans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>09:15 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> ASW</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">8 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>05:15 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> LXR</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="norefund">NO</h3>
+                                    <h4 class="norefund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">3,000 EGP</h4>
+                                <h5>Only 6 tickets left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>
+
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/egyptair_trans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>01:40 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> HRG</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">19 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>08:40 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> CAI</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="refund">WITH</h3>
+                                    <h4 class="refund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">4,775 EGP</h4>
+                                <h5>Only 8 tickets left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>                    
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/flyrgypttrans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>01:40 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> CAI</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">19 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>08:40 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> SSH</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="norefund">NO</h3>
+                                    <h4 class="norefund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">4,128 EGP</h4>
+                                <h5>Only 4 tickets left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>                    
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/egyptair_trans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>07:30 pM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> HRG</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">1 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>08:30 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> SSH</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="norefund">NO</h3>
+                                    <h4 class="norefund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">3,207 EGP</h4>
+                                <h5>Only 4 tickets left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>                    
+
+                    <div class="resultListRow">
+                        <div class="resultsListColumn">
+                            <div class="resultListCard">
+                                <img src="Assets/imgs/aircairotrans.png" alt="airlineLogo">                                
+                                <div class="flightData">
+                                    <h4>01:40 AM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> PSD</h4>
+                                </div>
+
+
+                                <div class="flightData">
+                                    <h4 class="duration">9 Hours</h4>
+                                    <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                                </div>
+
+                                <div class="flightData">
+                                    <h4>08:40 PM</h4>
+                                    <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> SPX</h4>
+                                </div>  
+
+                                <div class="flightData">
+                                    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                                </div>
+
+                                <div class="flightData">
+                                    <h3 class="refund">WITH</h3>
+                                    <h4 class="refund">Refund</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resultsListColumn2">
+                            <div class="resultListCard">
+                                <h4 class="ticketprice">39,997 EGP</h4>
+                                <h5>Only 4 tickets left !</h5>
+                                <button type="button"><span>SELECT</span></button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>  
+            <div class="right">
+
+                <div class="adBox">
+                    <div class="adCard1">
+                        <h3>Need a hotel in Cairo?</h3>
+                        <img src="Assets/imgs/adFooter.jpg" alt="Logo bar">
+                        <a href="Hotels.html">Search hotels</a>
+                    </div>
+                </div>
+
+                <div class="adBox">
+                    <div class="adCard4">
+                        <h3>Attractions in Cairo ...</h3>
+                        <img src="Assets/imgs/adFooter.jpg" alt="Logo bar">
+                        <a href="Attractions.html">Search attractions</a>
+
+                    </div>
+                </div>
+
+                <div class="adBox">
+                    <div class="adCard2">
+                        <a href="https://www.opodo.com/" target="_blank">
+                            <img src= "Assets/imgs/opodoad1.png" alt = "trivago">
+                            <h3>Opodo.com <span class="iconify icon:fa-solid:ad icon-inline:false"></span></h3></a>
+
+                        <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwjP1q6-0IvpAhXXhNUKHWFyCqsYABAGGgJ3cw&num=5&sig=AOD64_3rc1sB2kCJKH_MXi-CNfCRBb_QuA&adurl=&q=" target="_blank"><h4>New York to Cairo Flights - The Lowest Fares to Cairo</h4></a>
+
+                        <h5>Compare Flights New York to Cairo. Book Today and Get the Cheapest Tickets!</h5>
+                    </div>
+                </div>
+
+                <div class="adBox">
+                    <div class="adCard5">
+                        <a href="https://www.edreams.com/" target="_blank">
+                            <img src= "Assets/imgs/edreamsad2.png" alt = "trivago">
+                            <h3>eDreams.com <span class="iconify icon:fa-solid:ad icon-inline:false"></span></h3>
+
+                            <h4>Search, compare and book your package holidays with eDreams.</h4></a>
+                        <h5>Get the best deals on your next vacation. Cheap flights, hotel and car hire!<br><br> WE OFFER... <br> +1,700,000 Hotels.<br> Flight + Hotel Offers.<br> More than 665 Airlines.</h5>
+                    </div>
+                </div>
+
+                <div class="adCard3">
+                    <span class="iconify icon:fa-solid:ad icon-inline:false icon-width:30 icon-height:30"></span>
+                    <a href="https://www.harmony.gov.au/"  target="_blank"><img src="Assets/imgs/ads2.png" alt="ad"></a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

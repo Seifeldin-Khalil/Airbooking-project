@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> AirBooking.com ‖ Search </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <script src="Assets/script.js"></script>
+    </head>
+
+    <body>
+        <div id = "logo">
+            <div class = "webcenter">
+                <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                <a id="login" href="Login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                    <select id="LANG" name="lang">
+                        <option>English</option>
+                        <option>Chinese</option>
+                        <option>Arabic</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Russian</option>
+                        <option>Turkish</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                    </select>
+                </form>
+                <form method="post">
+                    <select id="currency" name="EGP">
+                        <option>EGP (LE)</option>
+                        <option>EUR (€)</option>
+                        <option>GBP (£)</option>
+                        <option>USD ($)</option>
+                        <option>SGD (S$)</option>
+                        <option>JPY (¥)</option>
+                        <option>KWD (KD)</option>
+                        <option>MXN (Mex$)</option>
+                        <option>RUB (₽)</option>
+                        <option>SAR (SR)</option>
+                        <option>CAD (C$)</option>
+                    </select>
+                </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>
+        </div>
+
+        <div id = "navigation">
+            <div class="webcenter">
+                <ul id="nav">
+                    <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                    <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                    <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                    <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="SearchContainer">
+            <div class = "webcenter">
+                <h2 id="searchboxtitle">Find the most convenient flights </h2><br>
+                <div id="searchbox">
+                    <div class="row">
+                        <div class="searchcol1">
+                            <form id = "triptype" method="get">
+                                <input id = "tripway" type="radio" name="triptype" value="One-way" >
+                                <label for="tripway">One-way</label><br><br>
+                                <input id = "tripway2" type="radio" name="triptype" value="Return">
+                                <label for="tripway">Return</label>
+                            </form>
+                        </div>
+
+                        <div class="searchcol2">
+                            <label>From</label>
+                            <select size="1" name="airport" class="airport">
+                                <option value="Cairo">Cairo (CAI)</option>
+                                <option value="Alex">Alexandria (ALY)</option>
+                                <option value="Hurghada">Hurghada (HRG)</option>
+                                <option value="Sharm">Sharm El Sheikh (SSH)</option>
+                                <option value="Portsaid">Port Said (PSD)</option>
+                                <option value="6October">6th of October (SPX)</option>
+                                <option value="Luxor">Luxor (LXR)</option>
+                                <option value="Aswan">Aswan (ASW)</option>
+                                <option value="Gouna">El Gouna</option>
+                                <option value="Giza">Giza</option>
+                            </select>
+                        </div>
+
+                        <div class="searchcol2">
+                            <a href="flights.html"><img id="swap" src= "Assets/imgs/swap.png" alt= "swap"></a>
+                        </div>
+
+                        <div class="searchcol2">
+                            <label>To</label>
+                            <select class="airport" size="1" name="airport" >
+                                <option value="Cairo">Cairo (CAI)</option>
+                                <option value="Alex">Alexandria (ALY)</option>
+                                <option value="Hurghada">Hurghada (HRG)</option>
+                                <option value="Sharm">Sharm El Sheikh (SSH)</option>
+                                <option value="Portsaid">Port Said (PSD)</option>
+                                <option value="6October">6th of October (SPX)</option>
+                                <option value="Luxor">Luxor (LXR)</option>
+                                <option value="Aswan">Aswan (ASW)</option>
+                                <option value="Gouna">El Gouna</option>
+                                <option value="Giza">Giza</option>
+                            </select>
+                        </div>
+
+                        <div class="searchcol2">
+                            <label for="Depart">Depart</label>
+                            <input id = "Depart" class="calender" type="date" name="date">
+                        </div>
+
+                        <div class="searchcol2">
+                            <label for="Return">Return</label>
+                            <input id = "Return" class="calender" type="date" name="date">
+                        </div>
+
+                        <div class="searchcol2">
+                            <label>Class</label>
+                            <select id="class">
+                                <option>Economy</option>
+                                <option>Business</option>
+                                <option>Premium Economy</option>
+                                <option>First</option>
+                                <option>Multiple</option>
+                            </select>
+                        </div>
+
+                        <div class="searchcol2">
+                            <label>Travelers</label>
+                            <select id = "travelers">
+                                <option>Adults</option>
+                                <option>Seniors</option>
+                                <option>Youth</option>
+                                <option>Child</option>
+                                <option>Seat Infant</option>
+                                <option>Lap Infant</option>
+                            </select>
+                        </div>  
+
+                        <div class="searchcol2">
+                            <label for="Seats">Seats</label>
+                            <input id = "Seats" class="amount" type="number" value="1" min="1" max="5">
+                        </div>
+
+                        <div class="searchcol2">
+                            <input id="searchbtn" type="submit" value="Search" onclick="location.href='flights_results.html'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="webcenter">
+            <h2 class="bodytitle">Top Destinations</h2> 
+
+            <table>
+                <tr id = "topdestoinationstable">
+                    <td class = "topdestoinationstd">
+                        <img class = "imggrid3" src = "Assets/imgs/History-of-Cairo-International-Airport-Egypt-Tours-Portal.jpg"   alt = "cairologo">
+                    </td>
+                    <td class = "topdestoinationstd">
+                        <img class = "imggrid3" src = "Assets/imgs/733893_663593150326531_1860873826_n.jpg" alt = "Alexlogo">
+                    </td>
+                    <td class = "topdestoinationstd">
+                        <img class = "imggrid3" src = "Assets/imgs/09abd4_6526ae5c9c76479fbe8884351992cd40_mv2_d_2043_1361_s_2.jpg" alt = "sharmxlogo">
+                    </td>
+                </tr>
+                <tr id = "topdestoinationstable2">
+                    <td class = "topdestoinationstd2">
+                        <h3>Cairo</h3>
+                        <p>Number of trips more than 1500 to cairo</p>
+                        <p>Cairo International Airport is the principal airport of Cairo located about 15 kilometers from the heart of the city. It serves as the primary hub for EgyptAir and Nile Air as well as several other airlines.</p>
+                    </td>
+                    <td class = "topdestoinationstd2">
+                        <h3>Alexandria</h3>
+                        <p>Number of trips more than 500 to Alex</p>
+                        <p>Borg El Arab International Airport is the principal airport serving Alexandria, Egyot, located about 40 km southwest of Alexandria, in Borg El Arab.
+                            Its trips reached to more than 500 trip per week.</p>
+                    </td>
+                    <td class = "topdestoinationstd2">
+                        <h3>Hurghada</h3>
+                        <p>Number of trips reached more than 500. </p>
+                        <p>Hurghada International Airport is located inland, 5 km from the downtown of Hurghada. It is the second busiest airport in Egypt after Cairo International Airport. </p>
+                    </td>
+                </tr>
+
+            </table>
+
+            <hr>
+
+            <h2 class="bodytitle">Recomended Airlines</h2>
+            <p id = "notes">Choose from our best airlines</p>
+            <table  id="recommends"> 
+                <tr>
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/egyptair.png" alt = "EgyptAirlogo">
+                            <p class ="airlinename">EgyptAir</p>
+                            <p class= "airlinefont">EgyptAir is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport operating scheduled passenger to more than 75 destinations, and there are more than 1500 trips are made to Cairo.</p>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/airarabia.png" alt = "AirArabialogo">
+                            <p class ="airlinename">Air Arabia</p>
+                            <p class= "airlinefont">Air Arabia is the first and largest low-cost carrier in the Middle East and North Africa. More than 115 Destinations reached by Air Arabia. It Operates out of 5 Hubs: Sharjah, Ras Al Khaima, Egypt, Morocco,  and Jordan.</p>
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>
+                            <img src = "Assets/imgs/flyegypt2.png" alt = "FlyEgyptlogo">
+                            <p class ="airlinename">Fly Egypt</p>
+                            <p class= "airlinefont">FlyEgypt is an Egyptian scheduled carrier based at Cairo International Airport.FlyEgypt introduced low-cost services in May-2016, using a fleet of Boeing 737NG aircraft in a single class configuration.</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <img src="Assets/imgs/nileair.png" alt="NileAirlogo">
+                            <p class ="airlinename">Nile Air</p>
+                            <p class= "airlinefont">Nile Air Offers a true full service product to ensure guest comfort. They have the highest on-time performance in Egypt. Today the airline has become the second largest independent airline in Egypt with a network spanning the Middle East, Gulf and Africa and Europe.</p>          
+                        </div>   
+                    </td>
+                </tr>
+            </table>
+
+            <br><br><hr> 
+
+            <div id="newsheader">
+                <h2 class="bodytitle"><span class="iconify icon:emojione-monotone:newspaper icon-inline:false"></span> NEWSROOM</h2>
+                <a href="news.html" > See More ></a>
+            </div>
+
+            <div class="newsroom">
+                <div class="news-1">
+                    <h2>UPDATE: International flights suspended until 14 April 2020</h2>
+                    <p class= "airlinefont">Hello travellers, <br><br>
+                        As you are all aware, the world is currently cooperatively fighting a fast-spreading pandemic. Part of this effort involves a reduction of travel to reduce the transmission and spread of the pathogen known as COVID-19.		</p>
+                </div>
+
+                <div class="news-2">
+                    <h2>Important notice for travellers flying to Jordan effective March 12th, 2020</h2>
+                    <p class= "airlinefont"> According to the instruction by the Ministry of Interior in Jordan, travellers of any nationality who have been in Egypt are not allowed to transit or enter Jordan.</p>
+                </div>
+
+                <div class="news-3">
+                    <h2>Temporary Suspension of flights to Saudi Arabia effective March 8th 2020</h2>
+                    <p class= "airlinefont"> According to the new instruction by authorities of theKingdom of Saudi Arbia, starting from March 18th all incomung Airports are temporarily suspended for the following countries: UAE, Kuwait. Bahrain, Lebanon, 		Egypt.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

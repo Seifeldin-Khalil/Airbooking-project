@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> AirBooking.com ‖ Search </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+        <script src="Assets/script.js"></script>
+    </head>
+
+    <body>
+        <div id = "logo">
+            <div class = "webcenter">
+                <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                <a id="login" href="Login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                    <select id="LANG" name="lang">
+                        <option>English</option>
+                        <option>Chinese</option>
+                        <option>Arabic</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Russian</option>
+                        <option>Turkish</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                    </select>
+                </form>
+                <form method="post">
+                    <select id="currency" name="EGP">
+                        <option>EGP (LE)</option>
+                        <option>EUR (€)</option>
+                        <option>GBP (£)</option>
+                        <option>USD ($)</option>
+                        <option>SGD (S$)</option>
+                        <option>JPY (¥)</option>
+                        <option>KWD (KD)</option>
+                        <option>MXN (Mex$)</option>
+                        <option>RUB (₽)</option>
+                        <option>SAR (SR)</option>
+                        <option>CAD (C$)</option>
+                    </select>
+                </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>
+        </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+        <div class="webcenter">
+            <div class="flight_booking">
+
+                <div class="info">
+                    <img src="Assets/imgs/egyptair_trans.png" alt ="airline logo " id="SummaryLogo">
+                    <h2> REVIEW TICKET DETAILS</h2><br>
+
+                    <div class="resultsListColumn">
+                        <div class="resultListCard">
+                            <div class="flightData">
+                                <h4>08:00 AM</h4>
+                                <h4><span class="iconify icon:fa-solid:plane-departure icon-inline:false"></span> HRG</h4>
+                            </div>
+
+                            <div class="flightData">
+                                <h4 id="duration">12 Hours</h4>
+                                <iconify-icon data-icon="bi:arrow-right"></iconify-icon>
+                            </div>
+
+                            <div class="flightData">
+                                <h4>08:00 AM</h4>
+                                <h4><span class="iconify icon:fa-solid:plane-arrival icon-inline:false"></span> GIZA</h4>
+                            </div>  
+                            <div class="flightData">
+                                <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Baggage</h4>
+                                <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: black;"></span> Carry-on</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resultsListColumn2">
+                        <div class="resultListCard">
+                            <h3 id="price2">4,185 EGP</h3>
+                            <h4 class="refund">Refundable</h4>
+                        </div>
+                    </div> 
+
+                    <hr><br>
+                    <h2>BOOK & PAY</h2><br>
+                    <div class="notice">
+                        <details>
+                            <summary><span id="info" class="iconify icon:el:info-circle icon-inline:false"></span> Read Before Proceeding to Checkout <span id="arrow" class="iconify icon:dashicons:arrow-down-alt2 icon-inline:false icon-width:20 icon-height:20"></span></summary>
+                            <p>Prices shown always include an estimate of all mandatory taxes and charges, but remember to <b>review ALL ticket details, final prices and terms and conditions </b>on the booking website before you book.</p>
+
+                            <p>We recommend checking with airlines who might have flexible ticket polices before booking.</p>
+                            <ul>
+                                <li>Check for extra fees
+                                    <p>Some airlines charge extra for <b>baggage, insurance </b> or use of <b>credit cards</b> and include a service fee. View airlines fees.</p></li>
+
+                                <li>Check T&Cs for travellers aged 12-16
+                                    <p>Restrictions may apply to young passangers travelling alone.</p></li>
+                            </ul>
+                        </details>                
+                    </div>
+                    <br><br>
+
+
+                    <div class="checkoutContainer">
+                        <form name="bookingForm" method="get"  onsubmit="confBox2()">
+                            <div class="section">
+                                <div class="col-50">
+                                    <h2>Traveller Info</h2>
+                                    <label for="fname"><span class="iconify icon:bi:person-fill icon-inline:false"></span> Full Name   <span class="req">*</span></label>
+                                    <input required type="text" id="fname" name="firstname" placeholder="Name as in ID or Passport ">
+
+                                    <label for="email"><span class="iconify icon:dashicons:email-alt icon-inline:false"></span> Email <span class="req">*</span></label>
+                                    <input required type="email" id="email" name="email" placeholder="ex. john@example.com">
+
+                                    <label for="tel"><span class="iconify icon:el:phone icon-inline:false"></span> Phone Number <span class="req">*</span></label>
+                                    <input required type="tel" id="tel" name="tel" placeholder="ex. 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                                    <label for="adr"><span class="iconify icon:fa-solid:address-book icon-inline:false"></span> Address <span class="req">*</span></label>
+                                    <input required type="text" id="adr" name="address" placeholder="ex. 542 W. 15th Street">
+
+                                    <div class="section">
+                                        <div class="col-50">
+                                            <label for="country">Country <span class="req">*</span></label>
+                                            <input type="text" name="country" id="country"
+                                                   required list="countries" placeholder="Enter a country..." >
+                                            <datalist id="countries">
+                                                <option value="Egypt">
+                                                <option value="US">
+                                                <option value="china">
+                                                <option value="India">
+                                            </datalist>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="city"> City <span class="req">*</span></label>
+                                            <input type="text" name="city" id="city"
+                                                   required  placeholder="Enter a city..." >
+                                        </div>
+                                    </div>
+
+                                    <label for="zip"> Postal Code <span class="req">*</span></label>
+                                    <input required type="text" id="zip" name="zip" placeholder="ex. 10001" pattern="[0-9]{5}">
+                                </div>
+
+                                <div class="col-50">
+                                    <h2>Payment </h2>
+                                    <h5 id="conf"><span class="iconify icon:fxemoji:lock icon-inline:false"></span> Your personal information is protected.</h5>
+                                    <label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <span id="paymentCard1" class="iconify icon:cib:cc-visa icon-inline:false"></span>
+                                        <span id="paymentCard2" class="iconify icon:cib:american-express icon-inline:false"></span>
+                                        <span id="paymentCard3" class="iconify icon:cib:cc-mastercard icon-inline:false"></span>
+                                        <span id="paymentCard4" class="iconify icon:cib:cc-discover icon-inline:false" ></span>  
+                                    </div>
+
+                                    <label for="bname">Bank Name <span class="req">*</span> </label>
+                                    <input required type="text" id="bname" name="bname" placeholder="ex. HSBC">
+
+                                    <label for="cname">  Name on Card <span class="req">*</span></label>
+                                    <input required type="text" id="cname" name="cardname" placeholder="ex. John More Doe">
+
+                                    <label for="ccnum"> Credit card number <span class="req">*</span></label>
+                                    <input required type="number" id="ccnum" name="cardnumber" placeholder="ex. 1111-2222-3333-4444" >
+
+                                    <label for="expmonth">Exp Month <span class="req">*</span></label>
+                                    <input required type="text" id="expmonth" name="expmonth" placeholder="ex. September">
+
+                                    <div class="section">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year <span class="req">*</span></label>
+                                            <input required type="text" id="expyear" name="expyear" placeholder="ex. 2018" pattern="[0-9]{4}">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv"> CVV <span class="req">*</span></label>
+                                            <input required type="number" id="cvv" name="cvv" placeholder="ex. 352" >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><br>
+
+                            <input required type="checkbox"> <span class="req">*</span> I declare I have read and accept: AirBooking Terms and regulation policy.
+                            <br><br>
+                            <input type="checkbox">I agree to receive newsletters from AirBooking regarding promotional offers at the e-mail I provided.
+
+                            <input type="submit" value="Confirm Payment" class="btn">
+                        </form>
+                    </div><br><br><hr><br>
+
+                    <div class="quick_links">
+                        <img src="Assets/imgs/ad3.jpg" alt="hotels">
+                        <h2>Need a hotel in Egypt?</h2>
+                        <p>AirBooking has got you more than <b>100</b> hotels in Egypt.</p>
+                        <a href="Index.html">Search Hotels <span id="rArrow1" class="iconify icon:dashicons:arrow-right-alt icon-inline:false"></span></a>
+                    </div>
+
+                    <div class="quick_links">
+                        <img src="Assets/imgs/ad4.jpg" alt="attractions">
+                        <h2>What to visit?</h2>
+                        <p>AirBooking has got you the best attractions for your trip.</p>
+                        <a href="Attractions.html">Search Attractions <span id="rArrow2" class="iconify icon:dashicons:arrow-right-alt icon-inline:false"></span></a>
+                    </div>
+                </div>
+
+                <div class="seatBooking">
+                    <h2>SEAT BOOKING</h2>
+                    <img src="Assets/imgs/plane%20template.png" alt="seat map">
+                </div>               
+            </div> 
+        </div>
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

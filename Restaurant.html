@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> AirBooking.com ‖ Search </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+          <script src="AirbookingJS.js"></script>
+                  <style> 
+                    /*Restaurant*/
+
+            .flights-container{margin-top: 50px;}
+            .left{margin-top:50px;} 
+            
+     .restt{font: 30px; font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+         -webkit-font-smoothing: antialiased; color: black; text-align:start;}
+.sr_item {color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+top: 100px;                                                                                            
+padding: 10px;                                                                            
+border: 1px solid #c6c6c6;
+border-radius: 3px;
+box-sizing: border-box;
+cursor: default;
+clear: both;
+background-color: #fff;
+min-height: auto;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+flex-direction: row;
+flex-wrap: wrap;
+-webkit-box-pack: justify;
+    justify-content: space-between;}
+.sr_item_content{color: #333;
+font-size: small;
+line-height: 1.2;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: normal;
+display: block;
+min-height: auto;
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: 0;
+box-sizing: border-box;
+-webkit-box-ordinal-group: 3;
+order: 2;
+-webkit-box-flex: 1;
+flex-grow: 1;
+flex-basis: 200px;
+padding: 0 0 0 16px;
+    min-width: 0;}
+.sr_property_block_main_row{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+flex-direction: row-reverse;
+-webkit-box-pack: justify;
+justify-content: space-between;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+    min-height: 50px;}
+.sr_item_main_block{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+min-height: auto;
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-box-ordinal-group: 3;
+order: 2;
+-webkit-box-flex: 1;
+    flex-grow: 1;}
+.sr-hotel__title-wrap{color: #333;
+font-family: Candara;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+    margin-bottom: 4px;}
+.sr-hotel__title {color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 24px;
+line-height: 28px;
+font-weight: 500;
+margin: 0!important;
+padding-right: 2px;
+    display: inline;}
+.sr-hotel__title-badges{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+    display: inline;}
+.sr_card_address_line{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+    margin-bottom: 8px;}
+.bui-link2{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: reverse;
+box-sizing: border-box;
+text-decoration: underline;
+cursor: pointer;
+font-size: 18px;
+line-height: 18px;
+margin-bottom: 8px;
+font-weight: 600;
+color: #000033; 
+    font-size: 18px;}
+.sr_item_review_block{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+min-height: auto;
+position: relative;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-box-ordinal-group: 2;
+order: 1;
+-webkit-box-flex: 0;
+flex-grow: 0;
+flex-shrink: 0;
+width: auto;
+    max-width: 45%;}
+.reviewFloater
+{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+text-align: right;
+float: none;
+    margin-left: 24px;}
+            .sr-review-score{
+color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+cursor: default;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+font-weight: 400;
+                text-align: right;}
+.bui-review-score {font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+font-size: 12px;
+line-height: 18px;
+text-align: right;
+color: #6b6b6b;
+box-sizing: border-box;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+font-weight: 500;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+    flex-direction: row-reverse;}
+.bui-review-score__badge{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+line-height: 18px;
+text-align: right;
+-webkit-box-direction: reverse;
+box-sizing: border-box;
+background: #000033;
+color: #fff;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+font-size: 16px;
+font-weight: 500;
+-webkit-box-pack: center;
+justify-content: center;
+vertical-align: baseline;
+border-radius: 6px 6px 6px 0;
+height: 32px;
+width: 32px;
+    min-width: 32px;}
+.bui-review-score__content{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+font-size: 12px;
+line-height: 18px;
+color: #6b6b6b;
+font-weight: 500;
+-webkit-box-direction: reverse;
+box-sizing: border-box;
+margin-left: 0;
+margin-right: 8px;
+    text-align: right;}
+.bui-review-score__title{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: reverse;
+text-align: right;
+box-sizing: border-box;
+color: #000033;
+font-size: 16px;
+font-weight: 500;
+    line-height: 1;}
+.bui-review-score__text{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: reverse;
+text-align: right;
+box-sizing: border-box;
+color: #6b6b6b;
+font-size: 12px;
+font-weight: 500;
+line-height: 1;
+    margin-top: 4px;}
+.search-secondary-review-score{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: reverse;
+font-size: 12px;
+line-height: 18px;
+text-align: right;
+color: #6b6b6b;
+font-weight: bold;
+    padding: 0;}
+.roomNameInner{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: normal;
+cursor: pointer;
+line-height: 18px;
+    font-size: 12px;}
+.free-cancel-persuasion {font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: normal;
+cursor: pointer;
+line-height: 18px;
+font-size: 12px;
+color: #008009;
+    display: inline-block;}
+.prco-wrapper{color: #333;
+font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: normal;
+cursor: pointer;
+text-align: right;
+font-weight: normal;
+position: relative;
+padding-bottom: 8px;
+line-height: 18px;
+    font-size: 12px;}
+.bui-price-display__value prco-inline-block-maker-helper{font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+-webkit-box-direction: normal;
+cursor: pointer;
+text-align: right;
+box-sizing: border-box;
+display: inline-block;
+font-size: 20px;
+line-height: 28px;
+font-weight: 500;
+    color: #333;}
+.b_tt_holder_1{-webkit-box-direction: reverse;
+text-align: right;
+border: 1px solid #000;
+border-radius: 2px;
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+cursor: pointer;
+font-family: inherit;
+text-decoration: none;
+box-sizing: border-box;
+vertical-align: middle;
+font-size: 14px;
+line-height: 1.4285714286em;
+background-color: #000033;
+border-color:#000033;
+float: none;
+font-weight: 500!important;
+color: #fff;
+    padding: 8px 16px!important;}
+/*Restaurant*/   
+        </style>
+    </head>
+    
+    <body>
+        <div id = "logo">
+            <div class = "webcenter">
+                  <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                  <a id="login" href="Login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                   <select id="LANG" name="lang">
+                       <option>English</option>
+                       <option>Chinese</option>
+                       <option>Arabic</option>
+                       <option>French</option>
+                       <option>German</option>
+                       <option>Italian</option>
+                       <option>Japanese</option>
+                       <option>Russian</option>
+                       <option>Turkish</option>
+                       <option>Spanish</option>
+                       <option>Swedish</option>
+                    </select>
+                 </form>
+                <form method="post">
+                   <select id="currency" name="EGP">
+                       <option>EGP (LE)</option>
+                       <option>EUR (€)</option>
+                       <option>GBP (£)</option>
+                       <option>USD ($)</option>
+                       <option>SGD (S$)</option>
+                       <option>JPY (¥)</option>
+                       <option>KWD (KD)</option>
+                       <option>MXN (Mex$)</option>
+                       <option>RUB (₽)</option>
+                       <option>SAR (SR)</option>
+                       <option>CAD (C$)</option>
+                    </select>
+                 </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>
+        </div>
+          
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+       <div class="webcenter">
+         <div class="flights-container">
+                    <div class="left">
+                
+                <ul id="myUL">
+
+                   <li style="font-size: 20px;">
+                        <a href="#">Review</a>
+                        <div>
+                            <label class="stops">5 stars
+                                <input type="radio" checked="checked" name="sort">
+                                <span class="checkmark"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star" style="color: orange;"></span>
+                                <span class="fa fa-star" style="color: orange;"></span>
+                            </label>
+
+                            <label class="stops"> 4 stars
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star" style="color: orange;"></span>
+                            </label>
+
+                            <label class="stops">3 stars
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                            </label>
+
+                            <label class="stops">2 stars
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                            </label>
+                        </div>
+                    </li>
+                     <li style="font-size: 20px;">
+                     <a href="#" style="font-size: 20px; ">Price Range</a>
+                        <div>
+                            <label class="stops">50-100 EGP
+                                <input type="radio" name="sort">
+                                <span class="checkmark">
+                                </span>
+                            </label>
+
+                            <label class="stops"> 100-250 EGP
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops">250-300 EGP
+                                <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>  
+                            </label>
+
+                            <label class="stops">300-400 EGP
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">400-500 EGP
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li style="font-size: 20px;">
+                     <a href="#">Restaurant Type</a>
+                        <div>
+                            <label class="stops">Fine Dining
+                                <input type="radio" checked="checked" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">Seafood
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="stops">Local Cuisine
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">Steakhouse
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">Casual Dining
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">Ghost Restaurant
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                            <label class="stops">Family Style
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                              <label class="stops">Fast Food
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                         <label class="stops">Mediterranean restaurant
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </li>
+                     <li style="font-size: 20px;">
+                     <a href="#">Restaurant Features</a>
+                        <div>
+                            <label class="stops">Dining In
+                                <input type="radio" checked="checked" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="stops">TakeAway
+                                <input type="radio" name="sort">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </li>
+                    </ul>
+                        <hr>
+             </div>
+<div class="right">
+ <div class="adCard3" style="width: 10px;">
+ <span class="iconify icon:fa-solid:ad icon-inline:false icon-width:30 icon-height:30"></span>
+  <a href="https://egypt.burgerking.me"  target="_blank"><img src="Assets/imgs/burgerking.jpg" alt="burgerking"></a>
+  </div>
+    <div class="adCard3" style="width: 10px;">
+ <span class="iconify icon:fa-solid:ad icon-inline:false icon-width:30 icon-height:30"></span>
+  <a href="https://www.netflix.com"  target="_blank"><img src="Assets/imgs/ads.jpg" alt="ad"></a>
+  </div>
+</div>
+ <div class="middle"> 
+<h1 class="restt" style="font-family:Copperplate Gothic Light;"> Restaurant</h1><br><br>  
+<div  class="sr_item">
+<div class="sr_item_photo add-sr-red-tag" >
+<img class="hotel_image" src="Assets/imgs/Sachi.jpg"  alt="Sachi Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content">
+<div class="sr_property_block_main_row">
+<div class="sr_item_main_block">
+<div class="sr-hotel__title-wrap">
+<h3 class="sr-hotel__title" >
+<span class="sr-hotel__name">
+Sachi Restaurant
+</span>
+</h3>
+<span class="sr-hotel__title-badges">
+<i class="bk-icon-wrapper" title="4-star hotel">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">4-star </span>
+</i>
+
+</span>
+</div>
+    
+<div class="sr_card_address_line">
+<a class="bui-link2">
+Address:Korea، 3, Cleopatra St، Korba،El-Montaza، Heliopolis, Cairo Governorate
+</a>
+</div>
+</div>
+<div class="sr_item_review_block">
+<div class="reviewFloater">
+<div class="
+sr-review-score">
+ <div class="bui-review-score c-score" > 
+<div class="bui-review-score__badge"> 9.0 </div> <div class="bui-review-score__content"> <div class="bui-review-score__title" > Superb </div> <div class="bui-review-score__text"> 407 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score">
+  
+<span class=" review-score-widget review-score-widget__exceptional review-score-widget__text-only   review-score-widget__right  review-score-widget__14   review-score-widget__no-subtext   ">
+<span class="review-score-widget__text">
+Location
+</span>
+<span class="review-score-badge">
+9.5
+</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg noheadsr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner" >
+
+<span style="color: #000;" role="link" tabindex="0">
+<strong>Mediterranean restaurant</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion">
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+<div class="prco-wrapper">
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: red;"></span> Dining-In</h4>
+ </div>
+<div class="bui-price-display__value prco-inline-block-maker-helper" aria-hidden="true">
+Begins from 200EGP
+</div><br>
+<br>
+      <a  href=https://www.sachirestaurant.com/target class="b_tt_holder_1">
+View Details
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div>
+        </div>
+<div>
+</div>
+
+ 
+<div  class="sr_item ">
+<div class="sr_item_photo add-sr-red-tag">
+<img class="hotel_image" src="Assets/imgs/portobello.jpg"  alt="Sachi Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content ">
+<div class="sr_property_block_main_row">
+<div class="sr_item_main_block" >
+<div class="sr-hotel__title-wrap" >
+<h3 class="sr-hotel__title">
+<span class="sr-hotel__name">
+PortObello Restaurant
+</span>
+</h3>
+<span class="sr-hotel__title-badges" >
+<i class="
+bk-icon-wrapper" title="4-star hotel">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span>
+</i>
+</span>
+</div>
+<div class="sr_card_address_line" >
+<a class="bui-link2">
+Address: El-Shaheed Atef El-Sadat, Port Fouad City, Port Said Governorate
+</a>
+</div>
+</div>
+<div class="sr_item_review_block">
+<div class="reviewFloater" >
+<div class="sr-review-score">
+ <div class="bui-review-score">
+<div class="bui-review-score__badge"> 10.0 </div> 
+<div class="bui-review-score__content"> 
+<div class="bui-review-score__title">Superb</div>
+<div class="bui-review-score__text"> 315 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg nohead sr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner">
+
+<span style="color: #000;">
+<strong>Fine Dining</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion">
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+<div class="prco-wrapper" >
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false"></span> Dining-In</h4>
+ </div>
+<div class="bui-price-display__value " aria-hidden="true">
+Begins from 50EGP
+</div><br>
+<br>
+      <a class="b_tt_holder_1"  href="http://menuegypt.com/Portobello-Cafe">
+<span class="bui-button__text">
+View Details
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div>
+</div>
+<div>
+</div>
+
+ 
+<div  class="sr_item">
+<div  class="sr_item_photo">
+<img class="hotel_image" src="Assets/imgs/seagull.jpg"  alt="Sachi Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content" >
+<div class="sr_property_block_main_row">
+<div class="sr_item_main_block">
+<div class="sr-hotel__title-wrap">
+<h3 class="sr-hotel__title">
+<span class="sr-hotel__name">
+Sea Gull Restaurant
+</span>
+</h3>
+<span class="sr-hotel__title-badges">
+<i class="bk-icon-wrapper" title="4-star hotel">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span>
+</i>
+
+</span>
+</div>
+<div class="sr_card_address_line">
+<a class="bui-link2">
+Address:Elmax Elagamy, Elmax, Alexandria 21599 Egypt
+</a>
+</div>
+</div>
+<div class="sr_item_review_block">
+<div class="reviewFloater">
+<div class="sr-review-score" >
+ <div class="bui-review-score"> <div class="bui-review-score__badge" > 4.5 </div> <div class="bui-review-score__content"> <div class="bui-review-score__title"> Good </div> <div class="bui-review-score__text"> 128 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg nohead sr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner" >
+
+<span style="color: #000;" role="link" tabindex="0">
+<strong>Seafood, Mediteranean Restaurant</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion">
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+<div class="prco-wrapper">
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false"></span> Dining-In</h4>
+ </div>
+<div class="bui-price-display__value prco-inline-block-maker-helper" >
+Begins from 300EGP
+</div><br>
+
+    <br>
+    <a class="b_tt_holder_1"  href="https://seagullegypt.net/" >
+<span class="bui-button__text">
+View Details
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+ <div  class="sr_item ">
+<div class="sr_item_photo add-sr-red-tag">
+<img class="hotel_image" src="Assets/imgs/sofra.jpg"  alt="Sofra Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content" >
+<div class="sr_property_block_main_row">
+<div class="sr_item_main_block">
+<div class="sr-hotel__title-wrap">
+<h3 class="sr-hotel__title">
+<span class="sr-hotel__name">
+Sofra Restaurant
+</span>
+</h3>
+<span class="sr-hotel__title-badges">
+<i class="
+bk-icon-wrapper" title="4-star hotel" >
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span>
+</i>
+
+</span>
+</div>
+<div class="sr_card_address_line">
+<a class="bui-link2" >
+Address: 
+90 Mohamed Farid Street Al Manshiya, Luxor 83911 Egypt
+
+</a>
+</div>
+</div>
+<div class="sr_item_review_block">
+<div class="reviewFloater">
+<div class="
+sr-review-score
+" >
+ <div class="bui-review-score "> <div class="bui-review-score__badge"> 5.00 </div> <div class="bui-review-score__content"> <div class="bui-review-score__title" > Exellent </div> <div class="bui-review-score__text" > 2,009 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score" >
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg nohead sr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner">
+
+<span style="color: #000;" role="link" tabindex="0">
+<strong>Local cuisine, Middle Eastern, Egyptian, Vegetarian Friendly, Vegan Options</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion">
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: red;"></span> Dining-In</h4>
+ </div>
+<div class="prco-wrapper" >
+<div class="bui-price-display__value prco-inline-block-maker-helper">
+Begins from 100EGP
+</div><br>
+<br>
+    <a class="b_tt_holder_1" href="http://sofra.com.eg/">
+<span class="bui-button__text">
+View Details
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+</div>
+<div>
+</div>
+
+ 
+<div  class="sr_item ">
+<div class="sr_item_photo add-sr-red-tag" >
+<img class="hotel_image" src="Assets/imgs/gaucho-steakhouse.jpg"  alt="Sachi Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content">
+<div class="sr_property_block_main_row">
+<div class="sr_item_main_block">
+<div class="sr-hotel__title-wrap">
+<h3 class="sr-hotel__title" >
+<span class="sr-hotel__name">
+Gaucho Steakhouse
+</span>
+</h3>
+<span class="sr-hotel__title-badges" >
+<i class="
+bk-icon-wrapper" title="4-star hotel">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span>
+</i>
+</span>
+</div>
+<div class="sr_card_address_line">
+<a class="bui-link2">
+Address: Village Road Siva Grand Besch Hotel, Hurghada Egypt
+</a>
+</div>
+</div>
+<div class="sr_item_review_block">
+<div class="reviewFloater">
+<div class="
+sr-review-score
+" >
+ <div class="bui-review-score"> <div class="bui-review-score__badge"> 10.0 </div> <div class="bui-review-score__content"> <div class="bui-review-score__title" > Superb</div> <div class="bui-review-score__text" > 118 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score" >
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg noheadsr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner" >
+
+<span style="color: #000;" role="link" tabindex="0">
+<strong>Steakhouse, European</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion " >
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: red;"></span> Dining-In</h4>
+ </div>
+<div class="prco-wrapper">
+<div class="bui-price-display__value prco-inline-block-maker-helper">
+Begins from 200EGP
+</div><br>
+<br>
+    <a class="b_tt_holder_1"  href="http://www.gauchosteakhouse.com/">
+<span class="bui-button__text">
+View Details
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+</div>
+
+<div>
+</div>
+
+ <div  class="sr_item " >
+<div class="sr_item_photo add-sr-red-tag">
+<img class="hotel_image" src="Assets/imgs/houseofspice.jpg"  alt="House Of Restaurant" width="200" height="200">
+</div>
+<div class="sr_item_content ">
+<div class="sr_property_block_main_row" >
+<div class="sr_item_main_block" >
+<div class="sr-hotel__title-wrap">
+<h3 class="sr-hotel__title" >
+<span class="sr-hotel__name">
+House of Spice
+</span>
+</h3>
+<span class="sr-hotel__title-badges">
+<i class="
+bk-icon-wrapper" title="4-star hotel">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span>
+</i>
+
+</span>
+</div>
+<div class="sr_card_address_line">
+<a class="bui-link2">
+Address: 
+Sultan Gardens Resort Shark's Bay, Sharm El Sheikh 111 Egypt
+
+</a>
+</div>
+</div>
+<div class="sr_item_review_block" >
+<div class="reviewFloater" >
+<div class="sr-review-score" >
+ <div class="bui-review-score" > <div class="bui-review-score__badge"> 9.5 </div> <div class="bui-review-score__content" > <div class="bui-review-score__title" > Superb </div> <div class="bui-review-score__text" > 315 reviews </div> </div> </div>  
+
+<div class="search-secondary-review-score" >
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sr-badges__row">
+<div class="genius-benefits-badges">
+</div>
+</div>
+<div class="sr_rooms_table_block clearfix ">
+<div class="room_details ">
+<div class="featuredRooms sr_room_table sr_room_table_flex sr_rt_wider_urgency_msg noheadsr_rms_tbl_bdr ">
+<div>
+<div class="roomNameInner" >
+
+<span style="color: #000;" role="link" tabindex="0">
+<strong>Fine Dining</strong>
+</span>
+</div>
+</div>
+<div>
+</div>
+<span class="free-cancel-persuasion " >
+Risk free: You can cancel later, so lock in this great price today.
+</span>
+</div>
+</div>
+<div class="prco-wrapper bui-price-display ">
+    <div class="flightData">
+    <h4 class="baggage"><span class="iconify icon:bi:x icon-inline:false" style="color: green;"></span> Delivery</h4> 
+    <h4  class="baggage"><span class="iconify icon:ic:round-done icon-inline:false" style="color: red;"></span> Dining-In</h4>
+ </div>
+<div class="bui-price-display__value prco-inline-block-maker-helper">
+Begins from 50EGP
+</div><br>
+<br>
+      <a class="b_tt_holder_1" href="https://www.elmenus.com/sharm-el-sheikh/house-of-spice-6gx9">
+<span class="bui-button__text">
+View Details
+</span>
+</a>
+</div> 
+</div>
+</div>
+</div>
+</div>
+        </div>
+        </div>
+        
+          
+         <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

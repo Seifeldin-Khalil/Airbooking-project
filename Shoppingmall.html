@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <style>
+
+        </style>
+        <title> AirBooking.com ‖ Shopping Mall </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <link rel="stylesheet" href="Assets/Activities.css">
+                <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    
+    <body >
+        <div id = "logo">
+            <div class = "webcenter">
+                  <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                <a id="login" href="login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                   <select id="LANG" name="lang">
+                       <option>English</option>
+                       <option>Chinese</option>
+                       <option>Arabic</option>
+                       <option>French</option>
+                       <option>German</option>
+                       <option>Italian</option>
+                       <option>Japanese</option>
+                       <option>Russian</option>
+                       <option>Turkish</option>
+                       <option>Spanish</option>
+                       <option>Swedish</option>
+                    </select>
+                 </form>
+                <form method="post">
+                   <select id="currency" name="EGP">
+                       <option>EGP (LE)</option>
+                       <option>EUR (€)</option>
+                       <option>GBP (£)</option>
+                       <option>USD ($)</option>
+                       <option>SGD (S$)</option>
+                       <option>JPY (¥)</option>
+                       <option>KWD (KD)</option>
+                       <option>MXN (Mex$)</option>
+                       <option>RUB (₽)</option>
+                       <option>SAR (SR)</option>
+                       <option>CAD (C$)</option>
+                    </select>
+                 </form> 
+            </div>
+        </div>
+          
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+      <h1 class="shoppingtitle"style="color: black; text-align: center;font-family:Copperplate Gothic Light;"> Shopping Mall</h1> <br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="Assets/imgs/downtown.jpg" style="width:100%" alt="downtown">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Assets/imgs/cfc.jpg" style="width:100%" alt="cfc">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Assets/imgs/mallofarabia.jpg" style="width:100%" alt="mallofarabia">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Assets/imgs/sohosquar.jpg" style="width:100%" alt="soho">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 /6</div>
+  <img src="Assets/imgs/sanstafeno.jpg" style="width:100%" alt="sanstafeno">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="Assets/imgs/cfc.jpg" style="width:100%" alt="cfc">
+  <div class="text" style="color: black;">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><hr>
+
+             <table  id="recommends"> 
+                <tr>
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/cfc.jpg" alt = "CFC" style="height: 250px; width: 220px;">
+                              <p class ="airlinename" style="font-size:30px; margin-left:0px;">Cairo Festival City</p><br>
+                            <i class="
+bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                    <span class="invisible_spoken">5-star </span><br>
+</i>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address:Cairo Festival City Mall, Cairo Festival City, Ring Road, New Cairo Cairo, Egypt 11385</strong></p><br>
+                            <a  href=https://www.cairofestivalcity.com/en class="b_tt_holder_1" >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/citystarsmall.jpg" alt = "AirArabialogo" style="height: 250px;">
+                            <p class ="airlinename" style="font-size: 30px;">City Stars Mall</p><br>
+                            <i class="
+bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                                <span class="invisible_spoken">5-star </span></i>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address: Citystars Heliopolis, Citystars, Cairo Governorate 11771</strong></p><br>
+                            
+                             <a  href=http://www.citystars-heliopolis.com.eg/en class="b_tt_holder_1" >
+<span class="bui-button__text">
+    View Details</span></a><br>
+                        </div>
+                    </th>
+                </tr>
+               
+                <tr>
+                    <td>
+                        <div>
+                            <img src = "Assets/imgs/sun%20mall.jpg" alt = "FlyEgyptlogo" style="height:250px; width: 220px;">
+                            <p class ="airlinename" style="font-size: 30px;">Sun Mall Portaid</p><br>
+                            <i class="bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange; margin-left: 100px;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+
+                                <span class="invisible_spoken">3-star </span></i><br>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address: 23rd of July St. Sun Mall, 2nd floor, Port Said,42512</strong></p><br>
+                             <a  href=https://www.facebook.com/SunMallPortsaid/ class="b_tt_holder_1" style="margin-left: 150px;" >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div>
+                            <img src="Assets/imgs/sanstefano.jpg" alt="SanStefano" style="height:250px; width: 220px;">
+                            <p class ="airlinename" style="font-size: 30px;">San Stefano Mall </p><br>
+                            <i class="
+bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange; margin-left: 100px;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>                                
+                                <span class="invisible_spoken">5-star </span></i>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address: El-Gaish Rd, San Stifano, Qism El-Raml, Alexandria Governorate</strong></p><br>
+                             <a  href=https://www.facebook.com/SanStefanoAlex/ class="b_tt_holder_1" style="margin-left: 150px;">
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>   
+                    </td>
+                   </tr>
+                </table>
+            
+             <table  id="recommends"> 
+                <tr>
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/aswanmall.jpg" alt = "EgyptAirlogo" style="height: 250px; width:220px;">
+                              <p class ="airlinename" style="font-size: 30px;">Aswan Plaza Mall </p><br>
+                               <i class="
+bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+                                
+                                <span class="invisible_spoken">3-star </span></i><br>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address: Kornish Al Nile, Abu AR Rish Qebli, Qism Aswan, Aswan Governorate</strong></p><br>
+                             <a  href=https://www.facebook.com/AswanPlaza/ class="b_tt_holder_1" >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/downtown.jpg" alt = "Dowtown" style="height: 250px; width:220px;">
+                            <p class ="airlinename" style="font-size:30px;">DownTown Katameya</p>
+                            <i class="
+bk-icon-wrapper
+bk-icon-stars
+star_track
+" title="4-star hotel" style="color: orange;">
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+<span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>
+ <span class="iconify" data-icon="ic-round-star-rate" data-inline="false"></span>                               
+                                <span class="invisible_spoken">5-star </span></i>
+                            <p class= "airlinefont" style="font-size: 18px;"><strong>Address: Area A-City Center, 5th District, Road 90، Cairo Governorate </strong></p>
+                            <a  href=http://katameyadowntown.com/ class="b_tt_holder_1" >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </th>
+                  </tr></table>
+                        <div></div>
+            
+
+          
+ <footer>
+            <div class = "footer2" style="margin-top: 30px;">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "about.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "#">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+    </body>          
+</html>

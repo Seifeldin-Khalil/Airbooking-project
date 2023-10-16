@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> AirBooking.com ‖ Search </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+        <script src="Assets/script.js"></script>
+    </head>
+
+    <body>
+        <div id = "logo">
+            <div class = "webcenter">
+                <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                <a id="login" href="Login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                    <select id="LANG" name="lang">
+                        <option>English</option>
+                        <option>Chinese</option>
+                        <option>Arabic</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Russian</option>
+                        <option>Turkish</option>
+                        <option>Spanish</option>
+                        <option>Swedish</option>
+                    </select>
+                </form>
+                <form method="post">
+                    <select id="currency" name="EGP">
+                        <option>EGP (LE)</option>
+                        <option>EUR (€)</option>
+                        <option>GBP (£)</option>
+                        <option>USD ($)</option>
+                        <option>SGD (S$)</option>
+                        <option>JPY (¥)</option>
+                        <option>KWD (KD)</option>
+                        <option>MXN (Mex$)</option>
+                        <option>RUB (₽)</option>
+                        <option>SAR (SR)</option>
+                        <option>CAD (C$)</option>
+                    </select>
+                </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>
+        </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+
+
+        <div class="webcenter">
+            <div class="contactContent">
+                <div class="contacts_bar">
+                    <hr><h3><span class="iconify icon:entypo:location icon-inline:false"></span> LOCATION</h3><hr>
+                    <iframe id="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3700572603125!2d31.488722550886052!3d30.05492538178958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458187df74b774b%3A0x22c0e078ce15482e!2sAl%20Rehab%20City%20Hall!5e0!3m2!1sen!2seg!4v1588494831607!5m2!1sen!2seg"  ></iframe>
+                    <h4>Abou Hanifa Al Noaman,<br>
+                        AL Rehab City,<br>
+                        Cairo Governorate,<br>
+                        Egypt
+                    </h4><hr>
+                    <h3><span class="iconify icon:fa-solid:mobile-alt icon-inline:false"></span> PHONE</h3><hr>
+                    <h4> +20-101-650-7850</h4>
+                    <h4> +20-121-850-7853</h4>
+                    <h4>FAX:  +20-111-550-9850</h4>
+                    <hr><h3><span class="iconify icon:dashicons:email-alt icon-inline:false"></span> EMAIL</h3><hr>
+                    <h4> AirBooking@travel.com</h4>
+                </div>
+
+                <div class="form_area">     
+                    <div class="tabs">
+                        <div class="header">
+                            <button autofocus class="tabBtn" onclick="openTab('b1')">
+                                <span class="iconify icon:bx:bxs-phone-call icon-inline:false"></span> Request a Call
+                            </button>
+
+                            <button class="tabBtn" onclick="openTab('b2');">
+                                <span class="iconify icon:ic:baseline-feedback icon-inline:false"></span> Write Your Feedback
+                            </button>
+                        </div>
+
+                        <!-- Full-width columns: (hidden by default) -->
+                        <div id="b1" class="containerTab">
+                            <form class="form-content" method="get" onsubmit="confBox3()">
+                                <p>Faced a problem?  We are here to help you with our online <b>24/7</b> customer support. Request a call now!</p><br>
+
+                                <label for="fname"><span class="iconify icon:bi:person-fill icon-inline:false"></span> Full Name<span class="req">*</span></label>
+                                <input required type="text" id="fname" name="fname" placeholder="Name"><br>
+
+                                <label for="email"><span class="iconify icon:dashicons:email-alt icon-inline:false"></span> Email <span class="req">*</span></label><br>
+                                <input required type="email" id="email" name="email" placeholder="ex. john@example.com"><br>
+
+                                <label for="phoneNum"><span class="iconify icon:el:phone icon-inline:false"></span> Phone Number <span class="req">*</span></label><br>
+                                <input required type="tel" id="phoneNum" name="phoneNum" placeholder="ex. 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+                                <label for="subject"> Subject <span class="req">*</span></label><br>
+                                <textarea required id="subject" name="subject" placeholder="Write something.." cols="40" rows="2" ></textarea>
+
+                                <input type="submit" value="Submit Call Request" class="btn">
+                            </form>
+                        </div>
+
+                        <div id="b2" class="containerTab" style="display: none;">
+                            <form class="form-content" method="get" onsubmit="confBox4()">
+                                <p> Your feedback is important to us!</p><br>
+                                <label for="fname2"><span class="iconify icon:bi:person-fill icon-inline:false"></span> Full Name<span class="req">*</span></label>
+                                <input required type="text" id="fname2" name="fname2" placeholder="Name as in ID or Passport "><br>
+
+                                <label for="email1"><span class="iconify icon:dashicons:email-alt icon-inline:false"></span> Email <span class="req">*</span></label><br>
+                                <input required type="email" id="email1" name="email1" placeholder="ex. john@example.com"><br>
+
+                                <label for="rate">Rate Our Website <span class="req">*</span></label><br>
+                                <span class="iconify icon:ic:round-star-rate icon-inline:false"></span><span class="iconify icon:ic:round-star-rate icon-inline:false"></span><span class="iconify icon:ic:round-star-rate icon-inline:false"></span><span class="iconify icon:ic:round-star-rate icon-inline:false"></span><span class="iconify icon:ic:round-star-rate icon-inline:false"></span><br>
+                                <input required type="number" id="rate" name="rate" placeholder="from 1-5" min="1" max="5"><br>
+
+
+                                <label for="feedback"> Feedback </label><br>
+                                <textarea id="feedback" name="feedback" placeholder="Write your feedback.." cols="40" rows="2" ></textarea>
+
+                                <input type="submit" value="Submit Feedback" class="btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

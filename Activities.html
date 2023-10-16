@@ -1,0 +1,272 @@
+   <!DOCTYPE html>
+<html lang = "en">
+    <head>
+<style>
+   
+</style>
+    
+        
+        <title> AirBooking.com ‖ Activities </title>
+        <link rel="stylesheet" href="Assets/Layout.css">
+        <link rel="stylesheet" href="Assets/Activities.css">
+      
+                <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+ <body >
+        <div id = "logo">
+            <div class = "webcenter">
+                <img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO">
+                <a id="login" href="login.html" class="button"><br> Login </a>
+                <a href="signup.html" class="button"><br> SignUp </a>
+                <form method="post">
+                   <select id="LANG" name="lang">
+                       <option>English</option>
+                       <option>Chinese</option>
+                       <option>Arabic</option>
+                       <option>French</option>
+                       <option>German</option>
+                       <option>Italian</option>
+                       <option>Japanese</option>
+                       <option>Russian</option>
+                       <option>Turkish</option>
+                       <option>Spanish</option>
+                       <option>Swedish</option>
+                    </select>
+                 </form>
+                <form method="post">
+                   <select id="currency" name="EGP">
+                       <option>EGP (LE)</option>
+                       <option>EUR (€)</option>
+                       <option>GBP (£)</option>
+                       <option>USD ($)</option>
+                       <option>SGD (S$)</option>
+                       <option>JPY (¥)</option>
+                       <option>KWD (KD)</option>
+                       <option>MXN (Mex$)</option>
+                       <option>RUB (₽)</option>
+                       <option>SAR (SR)</option>
+                       <option>CAD (C$)</option>
+                    </select>
+                 </form> 
+                <!-- <h1> AirBooking </h1> -->
+            </div>  
+        </div>
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+     <div class="Activities">
+         <div class="webcenter">
+         <form class="example" action="/action_page.php">
+  <input type="text" placeholder="Restaurant, Mall, or Movie Theater...." name="search">
+  <button type="submit"><i class="fa fa-search" style="margin-top: 7px;"></i></button>
+</form>
+         </div>
+         <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+     </div>
+     <hr>
+   <div id="newsheader">
+                    <h2 class="bodytitle" style="font-size:40px;">Shopping Mall</h2>
+                    <a href="Shoppingmall.html" > See More ></a>
+     </div>
+ <div class="container" style="margin-left: 100px;">
+  <img src="Assets/imgs/cfc.jpg" alt="Avatar" class="avatar" style="padding:20px; width: 1000px; height: 300px;" >
+  <div class="act_middle">
+        <a  href=https://www.cairofestivalcity.com/en class="b_tt_holder_1">
+<span class="bui-button__text" style="font:candara;">
+   Cairo Festival City</span></a>
+  </div><br><br>
+  </div>
+  <div class="container" style="margin-left: 100px;">
+  <img src="Assets/imgs/mallofarabia.jpg" alt="Avatar" class="avatar" style="padding: 20px; width: 1000px; height: 300px;" > <br> <br>
+  <div class="act_middle">
+       <a class="b_tt_holder_1" href=http://www.mallofarabia.com.eg>
+<span class="bui-button__text">
+Mall of Arabia </span></a>
+  </div>
+  </div><br><br>
+   <hr> 
+     <div id="newsheader">
+     <h2 class="bodytitle" style="font-size: 40px;"> Restaurants</h2>
+                    <a href="Restaurant.html" > See More ></a>
+                </div>
+              <table  id="recommends"> 
+                <tr>
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/Sachi.jpg" alt = "EgyptAirlogo" style="height: 350px;">
+                              <p class ="airlinename">Sachi Restaurant</p>
+                            <p class= "airlinefont">Tucked away in a quiet street of Korba, Heliopolis. Sachi is a restaurant and bar, that brings to the neighbourhood a much needed watering hole, whether you are in for a drink or for a proper meal. Sachi's elegant interior is very well distributed into lounge, bar, high tables and dining areas, and can accommodate up to 100 people on its busiest weekend nights. By Baky Hospitality</p><br>
+                           <a href=https://www.sachirestaurant.com/target class="b_tt_holder_1" >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/vivo.jpg" alt = "AirArabialogo" style="height: 350px;">
+                            <p class ="airlinename">Vivo Restaurant</p>
+                              <p class= "airlinefont">In Italian it means “alive”, this restaurant will give you the experience of rustic Italian cuisine in a modern setting where you will have the chance to go in a journey to the Italian countryside with the smell of homemade pizza and the largest Grappa selection in town. With an Singer every Thursday &amp; Saturday</p><br>
+                             <a class="b_tt_holder_1" href=https://www.ritzcarlton.com/en/hotels/middle-east/cairo/dining/vivo  >
+<span class="bui-button__text">
+    View Details</span></a>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img src = "Assets/imgs/blue.jpg" alt = "AirArabialogo" style="height:350px;">
+                            <p class ="airlinename">The Blue Restaurant &amp; Grill</p>
+                              <p class= "airlinefont">The Blue Restaurant is a destination for modern Mediterranean and Italian cuisine. It offers authentically prepared dishes using only the finest imported meats, fresh seafood and other regional ingredients as you enjoy the ambiance of one of the city's most elegant dining venues. The restaurant serves all-day à la carte dishes, including antipasti, pastas and contemporary main dishes.</p><br>
+                                   <a class="b_tt_holder_1" href=https://www.kempinski.com/en/cairo/nile-hotel/dining/the-blue-restaurant-and-grill>
+                                    <span class="bui-button__text"> 
+                                    View Details</span></a>
+                        </div>
+                    </th>
+                </tr>
+                </table>
+     <hr>
+  <div id="newsheader">
+                    <h2 class="bodytitle" style="font-size:40px;">Movie Theaters</h2>
+                    <a href="Cinema.html" > See More ></a>
+     </div>
+     <div class="last" style=" padding-left: 400px;">
+   <div class="cin_card" style="align-content: flex-end;">
+
+<div class="avatar">
+   <img src="Assets/imgs/Zawya.jpg" style="height: 280px;" alt="City Stars">
+</div>
+<div class="cin_title">
+ <h2 style="color: black;">
+Zawya Cinema</h2>
+</div>
+<div class="des">
+
+<a class="b_tt_holder_1" href=https://zawyacinema.com
+    style="margin-left: 100px;  ">
+<span class="bui-button__text">
+    View Details</span></a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="cin_card" style="align-content: flex-end;">
+
+<div class="avatar">
+   <img src="Assets/imgs/city%20stars.jpg" style="height: 280px;" alt="City Stars">
+</div>
+<div class="cin_title">
+ <h2 style="color: black;">
+City Stars Cinema</h2>
+</div>
+<div class="des">
+
+<a class="b_tt_holder_1" href=https://elcinema.com/theater/3101250/data-
+    style="margin-left: 100px;  ">
+<span class="bui-button__text">
+    View Details</span></a>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="cin_card" style="align-content: flex-end;">
+
+<div class="avatar">
+   <img src="Assets/imgs/mirage.jpg" style="height: 280px;" alt="Mirage">
+</div>
+<div class="cin_title">
+ <h2 style="color: black;">
+Mirage Mall Cinema</h2>
+</div>
+<div class="des">
+<a href=https://elcinema.com/theater/3101250/ class="b_tt_holder_1" style=" margin-left: 100px;  ">
+<span class="bui-button__text">
+    View Details</span></a>
+</div>
+</div>
+     </div>
+   
+
+         <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

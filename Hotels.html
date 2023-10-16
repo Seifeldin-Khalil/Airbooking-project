@@ -1,0 +1,309 @@
+     <!DOCTYPE html>
+      <html lang = "en">
+          <head>
+              <title> AirBooking.com ‖ Search </title>
+              <link rel="stylesheet" href="Assets/Layout.css">
+                <script src="Assets/script.js"></script>
+          </head>
+
+          <body>
+              <div id = "logo">
+                  <div class = "webcenter">
+                        <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                        <a id="login" href="Login.html" class="button"><br> Login </a>
+                      <a href="signup.html" class="button"><br> SignUp </a>
+                      <form method="post">
+                         <select id="LANG" name="lang">
+                             <option>English</option>
+                             <option>Chinese</option>
+                             <option>Arabic</option>
+                             <option>French</option>
+                             <option>German</option>
+                             <option>Italian</option>
+                             <option>Japanese</option>
+                             <option>Russian</option>
+                             <option>Turkish</option>
+                             <option>Spanish</option>
+                             <option>Swedish</option>
+                          </select>
+                       </form>
+                      <form method="post">
+                         <select id="currency" name="EGP">
+                             <option>EGP (LE)</option>
+                             <option>EUR (€)</option>
+                             <option>GBP (£)</option>
+                             <option>USD ($)</option>
+                             <option>SGD (S$)</option>
+                             <option>JPY (¥)</option>
+                             <option>KWD (KD)</option>
+                             <option>MXN (Mex$)</option>
+                             <option>RUB (₽)</option>
+                             <option>SAR (SR)</option>
+                             <option>CAD (C$)</option>
+                          </select>
+                       </form> 
+                      <!-- <h1> AirBooking </h1> -->
+                  </div>
+              </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+                </div>
+
+        <div id="SearchContainer">
+            <div class="webcenter">
+        <h2 id="searchboxtitle">Find the best hotels</h2><br>
+            <div id="searchbox">
+                <div class="row">
+                    <div class="searchcol1">
+                        <input id="checkbox" type="checkbox">
+                        <br>
+                        <label id="checkboxlabel"> I  am travelling for  work</label>
+                    </div>
+                    <div class="searchcol2">
+                        <label for="destination">Destination</label>
+                        <select id="destination" size="1" name="destination">
+                             <option value="Cairo">Cairo</option>
+                             <option value="Alex">Alexandria</option>
+                             <option value="Hurghada">Hurghada</option>
+                             <option value="Sharm">Sharm El Sheikh</option>
+                             <option value="Portsaid">Port Said</option>
+                             <option value="6October">6th of October</option>
+                             <option value="Luxor">Luxor</option>
+                             <option value="Aswan">Aswan</option>
+                             <option value="Gouna">El Gouna</option>
+                             <option value="Giza">Giza</option>
+                         </select>
+                    </div>
+
+                    <div class="searchcol2">
+                        <label for="Check-in">Check-in date</label>
+                        <input id="Check-in" class="calender" type="date" name="date">
+                    </div>
+                       
+                    <div class="searchcol2">
+                        <label for="Check-out">Check-out date</label>
+                        <input id="Check-out" class="calender" type="date" name="date">
+                    </div>
+            
+                    <div class="searchcol2">
+                        <label for="Adults">Adults</label>
+                        <input id="Adults" class="amount" type="number" value="1" min="1" max="5">
+                    </div>
+                    
+                    <div class="searchcol2">
+                        <label for="Children">Children</label>
+                        <input id="Children" class="amount" type="number" value="1" min="1" max="5">
+                    </div>
+                    
+                    <div class="searchcol2">
+                        <label for="Rooms">Rooms</label>
+                        <input id="Rooms" class="amount" type="number" value="1" min="1" max="5">
+                    </div>
+
+                    <div class="searchcol222">
+                        <A onclick="searchfunction()" id="searchbtn2" href = "Hotels_search.html">Search</A>                    </div>
+                    
+                </div>
+            </div>
+            </div>
+          </div>
+            <hr>
+                              <div class="webcenter">
+
+                                    <h3 class="bodytitle">Quick filter</h3>
+            <br>
+            <div class="grid-container4">
+                        <div id = "imggrid4">
+                              
+                                    <h3 class = "h3grid">Cairo</h3>
+                              <p class = "h3grid2">5 Hotels</p>
+                              <a class = "hotel" href="Hotels_search.html">00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000</a>
+                        </div>
+                    
+                        <div id = "imggrid5">
+                              
+                                    <h3 class = "h3grid">Giza</h3>
+                              <p class = "h3grid2">3 Hotels</p>
+                              <a class = "hotel" href="Hotels_search.html">00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000<br>00000000000000000000000000000000000000000000000000000000000000000000000</a>
+                        </div>
+            </div>
+             <div class = "grid-container5">
+                        <div id = "imggrid6">
+                                    <h3 class = "h3grid">Sharm ELshaikh</h3>
+                              <p class = "h3grid2">8 Hotels</p>
+                              <a class = "hotel" href="Hotels_search.html">0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br></a>
+                        </div>
+                        <div id = "imggrid7">
+                              
+                                    <h3 class = "h3grid">Hurghada</h3>
+                              <p class = "h3grid2">10 Hotels</p>
+                              <a class = "hotel" href="Hotels_search.html">0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br></a>
+                   </div>
+                        <div id = "imggrid8">
+                              
+                                    <h3 class = "h3grid">Ain Sokhna</h3>
+                              <p class = "h3grid2">4 Hotels</p>
+                              <a class = "hotel"  href="Hotels_search.html">0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br>0000000000000000000000000000000000000000000000000<br></a>
+                   </div> 
+      
+                        </div>
+
+            
+                <br><br><hr>
+                  <h2 class="bodytitle">Hotels Guests Love</h2>
+                <div class = "grid-container6">
+                      
+                        <div id = "imggrid9">
+                              <img src="Assets/imgs/160409904.jpg" alt="profileimg">
+                              <a href = "Sofitel%20Cairo%20Nile%20El%20Gezirah.html"><h3>Sofitel Cairo Nile El Gezirah</h3></a>
+                              <h4>Cairo</h4>
+                              <p class = "pricegrid">Starting from 1,417</p>
+                              <div class = "gridhotel">
+                                    <div><p class = "h3grid3">8.1</p></div>
+                                    <div><p>Very Good</p></div>
+                                    <div><p>100 reviews</p></div>
+                              </div>
+                        </div>
+                        <div id = "imggrid10">
+                              <img src="Assets/imgs/206271018.jpg" alt="profileimg">
+                                   <a href = "#"><h3>Zone Sunny Lakes</h3></a> 
+                              <h4>Sharm El Sheikh</h4>
+                              <p class = "pricegrid">Starting from 2,276</p>
+                              <div class = "gridhotel">
+                                    <div><p class = "h3grid3">9.8</p></div>
+                                    <div><p>Excellent</p></div>
+                                    <div><p>1500 reviews</p></div>
+                              </div>
+
+                   </div>
+                        <div id = "imggrid11">
+                                    <img src="Assets/imgs/176032898.jpg" alt="profileimg">
+                                   <a href = "#"><h3>Desert Rose Resort</h3></a> 
+                                    
+                                    <h4>Hurghada</h4>
+                                    <p class = "pricegrid">Starting from 10,238</p>
+                              <div class = "gridhotel">
+                                    <div><p class = "h3grid3">8.8</p></div>
+                                    <div><p>Excellent</p></div>
+                                    <div><p>6000 reviews</p></div>
+                              </div>
+
+                        </div> 
+                <div id = "imggrid12">
+                                    <img src="Assets/imgs/95642857.jpg" alt="profileimg">
+                                    <a href = "#"> <h3>Cancun Sokhna Resort</h3></a>
+                                    <h4>Ain Sokhna</h4>
+                                    <p class = "pricegrid">Starting from 2,006</p>
+                              <div class = "gridhotel">
+                                    <div><p class = "h3grid3">8.3</p></div>
+                                    <div><p>Very Good</p></div>
+                                    <div><p>800 reviews</p></div>
+                              </div>
+                      </div>
+            </div>
+              <hr>
+
+              <div id = "profileimg">
+                <h2 class="bodytitle">Reviews</h2>
+                <ul>
+                      <li class = "imggg">
+                        <img src="Assets/imgs/images.jfif" alt="profileimg">
+                        <h3>Adit Eshaanth</h3>
+                        <p> Excellent quality, personalised service and accommodating. </p>
+                      </li>
+                    
+                      <li class = "imggg">
+                        <img src="Assets/imgs/images%20(1).jfif" alt="profileimg">
+                        <h3>William Mason</h3>
+                        <p> It's easy to find and book flights.I find it extremely user-friendly. </p>
+                      </li>
+                    
+                      <li class = "imggg">
+                        <img src="Assets/imgs/images%20(2).jfif" alt="profileimg">
+                        <h3>Emma James</h3>
+                        <p>  All my friends recommended Airbooking.  </p>
+                      </li>
+                    
+                      <li class = "imggg">
+                        <img src="Assets/imgs/images%20(3).jfif" alt="profileimg">
+                        <h3>Zoé Paul</h3>
+                        <p> AirBooking has been excellent with planning our holiday.  </p>
+                      </li>
+                    
+                      <li class = "imggg">
+                        <img src="Assets/imgs/images.png" alt="profileimg">
+                        <h3>Sophia Lucas</h3>
+                        <p> Very cooperative website easy to use and has all deals that I want.  </p>
+                      </li>
+                    
+                      <li class = "imggg">
+                        <img src="Assets/imgs/download.jfif" alt="profileimg">
+                        <h3>Martin Théo</h3>
+                        <p>  I got a fully refund pay due to the covid19 when it is usually non-refundable during holidays. </p>
+                      </li>
+                </ul>
+          </div> 
+            
+                        </div>
+
+         <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>

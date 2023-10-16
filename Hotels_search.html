@@ -1,0 +1,543 @@
+      <!DOCTYPE html>
+      <html lang = "en">
+          <head>
+              <title> AirBooking.com ‖ Search </title>
+              <link rel="stylesheet" href="Assets/Layout.css">
+                <script src="Assets/script.js"></script>
+          </head>
+
+          <body>
+              <div id = "logo">
+                  <div class = "webcenter">
+                        <a href="Index.html"><img src = "Assets/imgs/logo.PNG" alt = "AirBooking LOGO"></a>
+                        <a id="login" href="Login.html" class="button"><br> Login </a>
+                      <a href="signup.html" class="button"><br> SignUp </a>
+                      <form method="post">
+                         <select id="LANG" name="lang">
+                             <option>English</option>
+                             <option>Chinese</option>
+                             <option>Arabic</option>
+                             <option>French</option>
+                             <option>German</option>
+                             <option>Italian</option>
+                             <option>Japanese</option>
+                             <option>Russian</option>
+                             <option>Turkish</option>
+                             <option>Spanish</option>
+                             <option>Swedish</option>
+                          </select>
+                       </form>
+                      <form method="post">
+                         <select id="currency" name="EGP">
+                             <option>EGP (LE)</option>
+                             <option>EUR (€)</option>
+                             <option>GBP (£)</option>
+                             <option>USD ($)</option>
+                             <option>SGD (S$)</option>
+                             <option>JPY (¥)</option>
+                             <option>KWD (KD)</option>
+                             <option>MXN (Mex$)</option>
+                             <option>RUB (₽)</option>
+                             <option>SAR (SR)</option>
+                             <option>CAD (C$)</option>
+                          </select>
+                       </form> 
+                      <!-- <h1> AirBooking </h1> -->
+                  </div>
+              </div>
+
+              <div id = "navigation">
+                        <div class="webcenter">
+                  <ul id="nav">
+                        <li class = "navv"> <a class="active" href="Index.html"><span class="iconify icon:ic:baseline-flight icon-inline:false"></span> Flights </a></li>
+                        <li class = "navv"> <a href="Hotels.html"><span class="iconify icon:fa-solid:hotel icon-inline:false"></span> Hotels</a></li>
+                        <li class = "navv"> <a href="Attractions.html"><span class="iconify icon:mdi-ferris-wheel icon-inline:false"></span>  Attractions </a></li>
+                        <li class = "navv"> <a href="About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us </a></li>
+                  </ul>
+                        </div>
+
+</div>
+          <div class = "covid-19"><P class = "webcenter">COVID-19 (Coronavirus) may impact your travel plans. Please check for travel restrictions before booking and travelling to an accommodation. avel may be permitted only for certain purposes and in particular, touristic travel may not be allowed.</P></div>
+<div class = "webcenter">
+                
+<div class = "grid-result-hotels">
+      <div id = "filter">
+                  
+            <ul id = "hotelsearchinfilter">
+                  <li id = "searchtitle">search</li>
+            <li>
+                  <div class="searchfilter">
+                  <label for="destination2">Destination</label>
+                  <select id="destination2" size="1" name="destination">
+                  <option value="Cairo">Cairo</option>
+                  <option value="Alex">Alexandria</option>
+                  <option value="Hurghada">Hurghada</option>
+                  <option value="Sharm">Sharm El Sheikh</option>
+                  <option value="Portsaid">Port Said</option>
+                  <option value="6October">6th of October</option>
+                  <option value="Luxor">Luxor</option>           
+                  <option value="Aswan">Aswan</option>
+                  <option value="Gouna">El Gouna</option>
+                  <option value="Giza">Giza</option>
+                  </select>
+                  </div>
+            </li>
+            <li> 
+                  <div class="searchfilter">
+                  <label for="Check-in">Check-in date</label>
+                  <input id="Check-in" class="calender2" type="date" name="date">
+                  </div>
+            </li>
+            <li>
+                  <div class="searchfilter">
+                  <label for="Check-out">Check-out date</label>
+                  <input id="Check-out" class="calender2" type="date" name="date">
+                  </div>
+            </li>
+            <li>  
+                  <div id = "searchgrid">
+                  <div class="searchfilter2">
+                        <label for="Adults2">Adults</label>
+                        <input id="Adults2" class="amount2" type="number" value="1" min="1" max="5">
+                  </div>
+                  <div class="searchfilter2">
+                              <label for="Children2">Children</label>
+                              <input id="Children2" class="amount2" type="number" value="1" min="1" max="5">
+                  </div>
+                  <div class="searchfilter2">
+                              <label for="Rooms2">Rooms</label>
+                              <input id="Rooms2" class="amount2" type="number" value="1" min="1" max="5">
+                  </div>
+                  </div>
+            </li>
+
+            <li>                  
+                  <div class="searchfilter">
+                        <input id="searchbtn3" type="submit" value="Search" class="btn">
+                  </div>
+            </li>
+            </ul>
+                  
+                  
+                  
+                  <h3 id = "filterby">Filter by:</h3>
+                  <input type="text" id="filtersearch" onkeyup="myFunctionsssss()" placeholder="Type the filter you need...">
+<ul id="filteritems">
+<li id = "yourbudget">
+      <div class = "filterleft">
+            <p>Your budget</p>
+            <label class="filterlist">EGP 250 - EGP 300 per night
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">EGP 300 - EGP 1000 per night
+            <input type="checkbox">
+             <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">EGP 1000 - EGP 2000 per night
+            <input type="checkbox">
+             <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">EGP 2000 - EGP 3500 per night
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">EGP 3500 + per night
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+      </div>
+</li>
+                          
+<li id = "starrating">
+      <div class = "filterleft">
+            <p>Star rating</p>
+            <label class="filterlist">5 stars
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">4 stars
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">3 stars
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">Unrated
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+      </div>
+</li>
+<li id = "meals">
+      <div class = "filterleft">
+            <p>Meals</p>
+            <label class="filterlist">Breakfast included
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">Breakfast and dinner included
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">Full board
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+      </div>
+</li>
+<li id = "Bedpreference">
+      <div class = "filterleft">
+            <p>Bed preference</p>
+            <label class="filterlist">Twin beds
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                        
+            <label class="filterlist">Double bed
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+      </div>
+</li>
+<li id = "Reviewscore">
+      <div class = "filterleft">
+            <p>Review score</p>
+            <label class="filterlist">Superb: 9+
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                        
+            <label class="filterlist">Very good: 8+
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">Good: 7+
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                        
+            <label class="filterlist">Pleasant: 6+
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+                                
+            <label class="filterlist">No rating
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+      </div>
+</li>
+</ul>
+      </div>
+      
+<div>
+      <P class = "total-number-of-result">Ain Sokhna: 209 properties found </P>
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/hotelimg.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">Romance Hotel & Aqua Park</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">150 rooms left</a>
+      <P class = "hotel-info4">Breakfast & dinner included</P>
+      <P class = "hotel-info5">Free cancellation</P>
+      <P class = "hotel-info6">No prepayment needed</P>        
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">500 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">6.6</p>
+            </div>
+                              
+            </div>
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 1500</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li  class = "view-deal-margin-top">
+            <a href="Romance%20Hotel%20&%20Aqua%20Park.html" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+      </div>    
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/Cancun%20Sokhna%20Resort%20img%20.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">Cancun Sokhna Resort</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">5 rooms left</a>
+      <P class = "hotel-info4">Breakfast only</P>
+      <P class = "hotel-info5">Free cancellation</P>
+      <P class = "hotel-info6">No prepayment needed</P>        
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">200 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">8.1</p>
+            </div>
+                              
+            </div>
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 900</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li class = "view-deal-margin-top">
+            <a href="#" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+      </div>    
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/M%C3%B6venpick%20Resort%20El%20Sokhna%20img.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">Mövenpick Resort El Sokhna</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">637 rooms left</a>
+      <P class = "hotel-info4">full board</P>
+      <P class = "hotel-info5">no free cancellation</P>
+      <P class = "hotel-info6">Prepayment needed</P>        
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">1050 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">8.0</p>
+            </div>
+                              
+            </div>
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 1310</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li class = "view-deal-margin-top">
+            <a href="#" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+      </div>    
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/Porto%20Sokhna%20Beach%20Resort%20img.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">Porto Sokhna Beach Resort</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">90 rooms left</a>
+      <P class = "hotel-info4">dinner only</P>
+      <P class = "hotel-info5">Free cancellation</P>
+      <P class = "hotel-info6">No prepayment needed</P>        
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">550 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">7.0</p>
+            </div>
+                              
+            </div>
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 700</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li class = "view-deal-margin-top">
+            <a href="#" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+      </div>    
+      
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/Dome-Marina-Hotel-&-Resort-Ain-Sokhna-img.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">Dome Marina Hotel & Resort Ain Sokhna</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">700 rooms left</a>
+      <P class = "hotel-info4">Breakfast & dinner included</P>
+      <P class = "hotel-info5">Free cancellation</P>
+      <P class = "hotel-info6">No prepayment needed</P>
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">900 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">7.5</p>
+            </div>
+                              
+            </div>
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 1500</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li class = "view-deal-margin-top">
+            <a href="#" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+      </div>
+      
+      <div class = "search-result">
+<div class = "hotel-container">
+      <img class = "img-of-hotel-container" src = "Assets/imgs/TOLIP-Resort-El-Galala-Majestic-img.jpg" alt = "image of Romance Hotel & Aqua Park Opens in new window">
+      <br>
+      <a class = "hotel-name-result" href="#">TOLIP Resort El Galala Majestic</a>        
+      <p class = "ain-sokhna">Ain Sokhna</p>
+      <a class = "hotel-booking" href="#">Available from 1 bed (1 single)</a><br>
+      <a class = "hotel-booking" href="#">16 rooms left</a>
+      <P class = "hotel-info4">Full board</P>
+      <P class = "hotel-info5">Free cancellation</P>
+      <P class = "hotel-info6">No prepayment needed</P>
+                              
+</div>
+<div>
+<ul class = "ulhotel">
+      <li>
+            <div class = "hotel-container2">
+            <div>
+                  <p class = "review-score">Review score</p>
+                  <p class = "num-of-reviews">5900 reviews</p>
+            </div>
+            <div>
+                  <p class = "score-hotel">9.5</p>
+            </div>
+                              
+            </div>      
+      </li>
+      <li>
+            <p class = "hotel-info">1 night, 1 adult</p>
+            <p class = "hotel-info2">EGP 5000</p>
+            <p class = "hotel-info3">Additional charges may apply</p>
+      </li>
+      <li class = "view-deal-margin-top">
+            <a href="#" class="view-deal">View deal</a>
+      </li>
+</ul>
+</div>
+            </div>
+      <div class="list-of-search">
+                  <a  href="#">&laquo;</a>
+                  <a class="active" href="#">1</a>
+                  <a class="active" href="#">2</a>
+                  <a class="active" href="#">3</a>
+                  <a class="active" href="#">4</a>
+                  <a class="active" href="#">5</a>
+                  <a class="active" href="#">6</a>
+                  <a  href="#">&raquo;</a>
+</div>
+      </div>
+
+</div>
+          
+
+          
+          
+          
+          </div>    
+        <footer>
+            <div class = "footer2">
+            <div class = "row">
+               <h2 class = "footertitle2">AirBooking</h2>
+               <p id= "pfooter">AirBooking is the world's leader in online travel and related services.
+                Whoever you are, whatever you seek, we’ve got the perfect hotels, flights and attractions for you.</p>
+            </div>
+            
+            <div class = "row2">
+                <h2 class = "footertitle2">Quick Links</h2>
+                <ul>
+                    <li><a href = "Index.html"><span class="iconify icon:fa-solid:home icon-inline:false"></span> Home</a></li>
+                <li><a href = "Contact.html"><span class="iconify icon:bx-bxs-contact icon-inline:false"></span> Contact Us</a></li>
+                <li><a href = "About.html"><span class="iconify icon:ion-people icon-inline:false"></span> About Us</a></li>
+                <li><a href = "Terms%20and%20Regulation.html">Terms and Regulations</a></li>
+                </ul>
+            </div>
+                
+                 <div class = "row4">
+                <h2 class = footertitle2> Partners</h2>
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download.png" alt = "booking.com">
+                    <a href = "https://www.booking.com" target="_blank">Booking.com</a>
+                </div>
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(1).png" alt = "trivago">
+                    <a href = "https://ar.trivago.com" target="_blank">Trivago</a>
+                </div>
+
+                <div> 
+                    <img class = "imggrid2" src= "Assets/imgs/images%20(1).png" alt = "hotels.com">
+                    <a href = "https://www.hotels.com" target="_blank">Hotels.com</a>
+                </div> 
+
+                <div>
+                    <img class = "imggrid2" src= "Assets/imgs/download%20(2).jfif" alt = "sky.com">
+                    <a href = "https://www.skyscanner.net/" target="_blank">Skyscanner</a>
+                </div>
+            </div>
+
+            <div class = "row3">
+                <h2 class = "footertitle2">Follow Us</h2>
+                <a href="https://www.facebook.com/" class="facebook" target="_blank"><img class = "iconsize" src="Assets/imgs/facebook.png" alt="fb"></a>
+                <a href="https://www.twitter.com" class="twitter" target="_blank"><img class = "iconsize" src="Assets/imgs/twitter.png" alt="tw"></a>
+                <a href="https://www.youtube.com" class="youtube" target="_blank"><img class = "iconsize" src="Assets/imgs/youtube.png" alt="ytb"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img class = "iconsize" src="Assets/imgs/instagram.png" alt="ig"></a>
+            </div>
+        </div>
+        <p id = "copyright">All Right reserved by &copy; Airbooking.2020</p>
+    </footer>
+            </body>
+</html>
